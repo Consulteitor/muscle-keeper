@@ -46,7 +46,7 @@ export default async function LandingPage({
             <p className="text-sm font-medium uppercase tracking-wide text-accent">
               {t("hero.eyebrow")}
             </p>
-            <h1 className="mt-4 max-w-2xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+            <h1 className="mt-4 max-w-2xl font-serif text-4xl font-medium leading-[1.15] sm:text-5xl">
               <span>{titleLead}</span>{" "}
               <span className="text-muted-foreground">{titleRest}</span>
             </h1>
@@ -67,7 +67,7 @@ export default async function LandingPage({
             </p>
           </div>
 
-          <div className="rounded-2xl border border-border-strong bg-surface-elevated p-6 shadow-lg shadow-black/20">
+          <div className="rounded-2xl border border-border-strong bg-surface-elevated p-6 shadow-lg shadow-black/[0.06]">
             <p className="text-sm text-muted-foreground">
               {t("heroPreview.title")}
             </p>
@@ -97,7 +97,7 @@ export default async function LandingPage({
 
       <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-2xl font-semibold">{t("problem.title")}</h2>
+          <h2 className="font-serif text-2xl font-medium">{t("problem.title")}</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             {t("problem.body")}
           </p>
@@ -105,7 +105,7 @@ export default async function LandingPage({
       </section>
 
       <section className="mx-auto w-full max-w-3xl px-6 py-16">
-        <h2 className="text-2xl font-semibold">{t("howItWorks.title")}</h2>
+        <h2 className="font-serif text-2xl font-medium">{t("howItWorks.title")}</h2>
         <ol className="mt-6 space-y-4">
           {steps.map((step, i) => (
             <li key={i} className="flex gap-4">
@@ -130,7 +130,7 @@ export default async function LandingPage({
 
       <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <h2 className="text-2xl font-semibold">{t("faq.title")}</h2>
+          <h2 className="font-serif text-2xl font-medium">{t("faq.title")}</h2>
           <div className="mt-6 flex flex-col gap-6">
             {faqItems.map((item) => (
               <div key={item.question}>

@@ -60,7 +60,7 @@ export function EmailGate({
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-semibold">{tResult("title")}</h2>
+        <h2 className="font-serif text-2xl font-medium">{tResult("title")}</h2>
         <RiskBadge riskLevel={result.riskLevel} />
         <p className="text-muted-foreground leading-relaxed">
           {tResult(`interpretation.${result.riskLevel}`)}
@@ -131,7 +131,7 @@ export function EmailGate({
         <button
           type="submit"
           disabled={submitting}
-          className="rounded-md bg-accent px-8 py-3 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="rounded-md bg-accent px-8 py-3 text-base font-medium text-accent-foreground transition-colors hover:bg-accent-hover disabled:opacity-60"
         >
           {submitting ? t("submitting") : t("submit")}
         </button>

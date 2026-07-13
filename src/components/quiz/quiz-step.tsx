@@ -55,7 +55,7 @@ export function QuizStep({
     return (
       <div>
         {eyebrow}
-        <h2 className="mt-2 text-2xl font-semibold leading-snug text-balance sm:text-3xl">
+        <h2 className="mt-2 font-serif text-2xl font-medium leading-snug text-balance sm:text-3xl">
           {question}
         </h2>
         <input
@@ -81,7 +81,7 @@ export function QuizStep({
     return (
       <div>
         {eyebrow}
-        <h2 className="mt-2 text-2xl font-semibold leading-snug text-balance sm:text-3xl">
+        <h2 className="mt-2 font-serif text-2xl font-medium leading-snug text-balance sm:text-3xl">
           {question}
         </h2>
         {hint && <p className="mt-2 text-sm text-muted-foreground">{hint}</p>}
@@ -123,7 +123,7 @@ export function QuizStep({
   return (
     <div>
       {eyebrow}
-      <h2 className="mt-2 text-2xl font-semibold leading-snug text-balance sm:text-3xl">
+      <h2 className="mt-2 font-serif text-2xl font-medium leading-snug text-balance sm:text-3xl">
         {question}
       </h2>
       {singleHint && (

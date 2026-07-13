@@ -15,7 +15,7 @@ export default async function PrivacyPage({
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-6 py-16">
-      <h1 className="text-3xl font-semibold">{t("title")}</h1>
+      <h1 className="font-serif text-3xl font-medium">{t("title")}</h1>
       <p className="mt-2 text-sm text-muted-foreground">{t("updated")}</p>
       <p className="mt-6 text-muted-foreground leading-relaxed">{t("intro")}</p>
 

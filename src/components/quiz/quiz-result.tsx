@@ -45,7 +45,7 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl font-semibold">{t("title")}</h2>
+        <h2 className="font-serif text-2xl font-medium">{t("title")}</h2>
         <RiskBadge riskLevel={result.riskLevel} />
         <p className="text-muted-foreground leading-relaxed">
           {t(`interpretation.${result.riskLevel}`)}

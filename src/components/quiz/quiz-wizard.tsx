@@ -177,12 +177,12 @@ export function QuizWizard({ locale }: { locale: string }) {
             value={value}
             onChange={(v) => setAnswers((prev) => ({ ...prev, [step.field]: v }))}
           />
-          <div className="mt-8 flex justify-end border-t border-border pt-6">
+          <div className="sticky bottom-0 -mx-6 -mb-6 mt-8 flex justify-end border-t border-border bg-surface-elevated px-6 py-4 pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:static sm:mx-0 sm:mb-0 sm:pb-6">
             <button
               type="button"
               disabled={!valid}
               onClick={handleNext}
-              className="rounded-md bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover disabled:bg-surface-2 disabled:text-muted-foreground-2"
+              className="w-full rounded-md bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover disabled:bg-surface-2 disabled:text-muted-foreground-2 sm:w-auto"
             >
               {t("next")}
             </button>

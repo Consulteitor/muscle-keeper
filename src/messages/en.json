@@ -22,17 +22,65 @@
         { "label": "Main factors", "value": "3 factors detected" }
       ]
     },
+    "valueStrip": {
+      "items": [
+        {
+          "title": "Estimated risk",
+          "body": "Understand whether your current habits may increase lean mass loss."
+        },
+        {
+          "title": "Protein target",
+          "body": "Get a daily reference tailored to your answers."
+        },
+        {
+          "title": "Main factors",
+          "body": "Discover what's having the greatest impact on your result."
+        }
+      ]
+    },
     "problem": {
+      "eyebrow": "What the scale doesn't tell you",
       "title": "The muscle you lose doesn't come back on its own",
-      "body": "GLP-1 treatments can produce substantial weight loss. But total weight does not tell you how much came from fat and how much from lean mass. Without enough protein and muscle stimulus, you may reach a lower number on the scale without preserving all the muscle you need."
+      "body": "GLP-1 treatments can produce substantial weight loss. But total weight does not tell you how much came from fat and how much from lean mass. Without enough protein and muscle stimulus, you may reach a lower number on the scale without preserving all the muscle you need.",
+      "points": [
+        "Total weight doesn't distinguish fat from lean mass.",
+        "Losing weight too fast can increase the risk.",
+        "Strength and protein help protect your muscle."
+      ]
     },
     "howItWorks": {
       "title": "How it works",
       "steps": [
-        "Answer 12 questions about your treatment, progress, diet and current training.",
-        "We estimate your risk of muscle loss and a suggested daily protein target.",
-        "See your result immediately and receive a copy by email with the next steps."
+        {
+          "title": "Answer",
+          "body": "12 questions about your treatment, progress and habits."
+        },
+        {
+          "title": "We estimate",
+          "body": "We calculate your risk of muscle loss and a protein reference."
+        },
+        {
+          "title": "Know what to do",
+          "body": "Get your result and the factors that matter most, instantly."
+        }
       ]
+    },
+    "whatYouGet": {
+      "title": "Much more than a number",
+      "body": "The result doesn't just tell you whether your risk is low, moderate or high.",
+      "items": [
+        "Your estimated risk level",
+        "The factors that matter most",
+        "A suggested protein target",
+        "A 6-month projection if your pattern continues"
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "2 minutes",
+      "title": "Find out which part of your weight loss deserves attention",
+      "subtitle": "Answer 12 questions and get a personal estimate.",
+      "cta": "Calculate my risk",
+      "microcopy": "No cost · Instant result"
     },
     "disclaimerNote": "This is not a medical test and does not directly measure your body composition. It is a general estimate based on your answers.",
     "secondaryCta": "Calculate my risk",

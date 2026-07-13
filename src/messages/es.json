@@ -22,17 +22,65 @@
         { "label": "Factores principales", "value": "3 factores detectados" }
       ]
     },
+    "valueStrip": {
+      "items": [
+        {
+          "title": "Riesgo estimado",
+          "body": "Entiende si tus hábitos actuales pueden aumentar la pérdida de masa magra."
+        },
+        {
+          "title": "Objetivo de proteína",
+          "body": "Obtén una referencia diaria adaptada a tus respuestas."
+        },
+        {
+          "title": "Factores principales",
+          "body": "Descubre qué está influyendo más en tu resultado."
+        }
+      ]
+    },
     "problem": {
+      "eyebrow": "Lo que la báscula no te cuenta",
       "title": "El músculo que pierdes no vuelve solo",
-      "body": "Los tratamientos GLP-1 pueden producir una pérdida de peso importante. Pero el peso total no te dice cuánto has perdido de grasa y cuánto de masa magra. Sin suficiente proteína y estímulo muscular, puedes alcanzar un número más bajo en la báscula sin conservar todo el músculo que necesitas."
+      "body": "Los tratamientos GLP-1 pueden producir una pérdida de peso importante. Pero el peso total no te dice cuánto has perdido de grasa y cuánto de masa magra. Sin suficiente proteína y estímulo muscular, puedes alcanzar un número más bajo en la báscula sin conservar todo el músculo que necesitas.",
+      "points": [
+        "El peso total no distingue grasa de masa magra.",
+        "Perder peso rápido puede aumentar el riesgo.",
+        "Fuerza y proteína ayudan a proteger el músculo."
+      ]
       },
     "howItWorks": {
       "title": "Cómo funciona",
       "steps": [
-        "Responde 12 preguntas sobre tu tratamiento, tu evolución, tu alimentación y el entrenamiento que haces.",
-        "Estimamos tu riesgo de pérdida de masa muscular y un objetivo diario orientativo de proteína.",
-        "Ves el resultado al momento y recibes por email una copia con los siguientes pasos."
+        {
+          "title": "Responde",
+          "body": "12 preguntas sobre tu tratamiento, tu evolución y tus hábitos."
+        },
+        {
+          "title": "Estimamos",
+          "body": "Calculamos tu riesgo de pérdida de masa muscular y un objetivo de proteína."
+        },
+        {
+          "title": "Entiende qué hacer",
+          "body": "Recibes tu resultado y los factores que más influyen, al momento."
+        }
       ]
+    },
+    "whatYouGet": {
+      "title": "Mucho más que un número",
+      "body": "El resultado no se limita a decirte si tu riesgo es bajo, moderado o alto.",
+      "items": [
+        "Tu nivel de riesgo estimado",
+        "Los factores que más influyen",
+        "Un objetivo orientativo de proteína",
+        "Una proyección a 6 meses si mantienes el mismo patrón"
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "2 minutos",
+      "title": "Descubre qué parte de tu pérdida de peso conviene vigilar",
+      "subtitle": "Responde 12 preguntas y obtén una estimación personal.",
+      "cta": "Calcular mi riesgo",
+      "microcopy": "Sin coste · Resultado inmediato"
     },
     "disclaimerNote": "No es una prueba médica ni mide directamente tu composición corporal. Es una estimación orientativa basada en tus respuestas.",
     "secondaryCta": "Calcular mi riesgo",

@@ -22,17 +22,65 @@
         { "label": "Factors principals", "value": "3 factors detectats" }
       ]
     },
+    "valueStrip": {
+      "items": [
+        {
+          "title": "Risc estimat",
+          "body": "Entén si els teus hàbits actuals poden augmentar la pèrdua de massa magra."
+        },
+        {
+          "title": "Objectiu de proteïna",
+          "body": "Obtén una referència diària adaptada a les teves respostes."
+        },
+        {
+          "title": "Factors principals",
+          "body": "Descobreix què està influint més en el teu resultat."
+        }
+      ]
+    },
     "problem": {
+      "eyebrow": "El que la bàscula no et diu",
       "title": "El múscul que perds no torna sol",
-      "body": "Els tractaments GLP-1 poden produir una pèrdua de pes important. Però el pes total no et diu quant has perdut de greix i quant de massa magra. Sense prou proteïna i estímul muscular, pots arribar a un número més baix a la bàscula sense conservar tot el múscul que necessites."
+      "body": "Els tractaments GLP-1 poden produir una pèrdua de pes important. Però el pes total no et diu quant has perdut de greix i quant de massa magra. Sense prou proteïna i estímul muscular, pots arribar a un número més baix a la bàscula sense conservar tot el múscul que necessites.",
+      "points": [
+        "El pes total no distingeix greix de massa magra.",
+        "Perdre pes ràpid pot augmentar el risc.",
+        "Força i proteïna ajuden a protegir el múscul."
+      ]
     },
     "howItWorks": {
       "title": "Com funciona",
       "steps": [
-        "Respon 12 preguntes sobre el teu tractament, la teva evolució, la teva alimentació i l'entrenament que fas.",
-        "Estimem el teu risc de pèrdua de massa muscular i un objectiu diari orientatiu de proteïna.",
-        "Veus el resultat al moment i reps per email una còpia amb els passos següents."
+        {
+          "title": "Respon",
+          "body": "12 preguntes sobre el teu tractament, la teva evolució i els teus hàbits."
+        },
+        {
+          "title": "Estimem",
+          "body": "Calculem el teu risc de pèrdua de massa muscular i un objectiu de proteïna."
+        },
+        {
+          "title": "Entén què fer",
+          "body": "Reps el teu resultat i els factors que més hi influeixen, al moment."
+        }
       ]
+    },
+    "whatYouGet": {
+      "title": "Molt més que un número",
+      "body": "El resultat no es limita a dir-te si el teu risc és baix, moderat o alt.",
+      "items": [
+        "El teu nivell de risc estimat",
+        "Els factors que més hi influeixen",
+        "Un objectiu orientatiu de proteïna",
+        "Una projecció a 6 mesos si mantens el mateix patró"
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "2 minuts",
+      "title": "Descobreix quina part de la teva pèrdua de pes convé vigilar",
+      "subtitle": "Respon 12 preguntes i obtén una estimació personal.",
+      "cta": "Calcular el meu risc",
+      "microcopy": "Sense cost · Resultat immediat"
     },
     "disclaimerNote": "No és una prova mèdica ni mesura directament la teva composició corporal. És una estimació orientativa basada en les teves respostes.",
     "secondaryCta": "Calcular el meu risc",

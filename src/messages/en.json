@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "Muscle Keeper — don't lose muscle on your GLP-1 treatment",
+    "description": "Calculate in 2 minutes how much muscle you're losing on Ozempic, Wegovy, Mounjaro and similar drugs, and your daily protein floor."
+  },
+  "nav": {
+    "brand": "Muscle Keeper"
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "For people on Ozempic, Wegovy, Mounjaro and similar treatments",
+      "title": "You're going to lose weight. The question is what you lose with it.",
+      "subtitle": "Without strength training and enough protein, up to a third of what you lose on a GLP-1 is muscle, not fat. Answer 12 questions and calculate your real risk.",
+      "cta": "Start the diagnostic (2 minutes)"
+    },
+    "problem": {
+      "title": "The muscle you lose doesn't come back on its own",
+      "body": "GLP-1 drugs are very effective at losing weight, but they don't distinguish between fat and muscle. Losing lean mass accelerates sarcopenia, lowers your resting metabolism, and makes rebound weight regain more likely once you stop treatment. None of that gets mentioned in your injection."
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "steps": [
+        "You answer 12 questions about your treatment, your training and your eating.",
+        "We calculate an estimate of how much muscle you're losing and your daily protein floor.",
+        "You get your diagnostic by email, along with what you can do about it."
+      ]
+    },
+    "disclaimerNote": "This isn't a medical test. It's a rough estimate to help you understand your situation, not a clinical diagnosis.",
+    "secondaryCta": "Start the diagnostic"
+  },
+  "quiz": {
+    "progress": "Step {step} of {total}",
+    "back": "Back",
+    "next": "Continue",
+    "selectAtLeastOne": "Pick at least one option, or continue if none apply.",
+    "fields": {
+      "sex": {
+        "question": "What's your sex?",
+        "options": { "female": "Female", "male": "Male" }
+      },
+      "birthYear": {
+        "question": "What year were you born?",
+        "placeholder": "E.g. 1985"
+      },
+      "heightCm": {
+        "question": "How tall are you? (cm)",
+        "placeholder": "E.g. 170"
+      },
+      "currentWeightKg": {
+        "question": "What's your current weight? (kg)",
+        "placeholder": "E.g. 78"
+      },
+      "startingWeightKg": {
+        "question": "What did you weigh when you started treatment? (kg)",
+        "placeholder": "E.g. 92"
+      },
+      "targetWeightKg": {
+        "question": "What's your target weight? (kg)",
+        "placeholder": "E.g. 70"
+      },
+      "medication": {
+        "question": "Which medication are you on?",
+        "options": {
+          "semaglutide_ozempic": "Semaglutide (Ozempic)",
+          "semaglutide_wegovy": "Semaglutide (Wegovy)",
+          "semaglutide_rybelsus": "Oral semaglutide (Rybelsus)",
+          "tirzepatide_mounjaro": "Tirzepatide (Mounjaro)",
+          "tirzepatide_zepbound": "Tirzepatide (Zepbound)",
+          "liraglutide_saxenda": "Liraglutide (Saxenda)",
+          "dulaglutide_trulicity": "Dulaglutide (Trulicity)",
+          "other_unsure": "Other / not sure"
+        }
+      },
+      "treatmentDuration": {
+        "question": "How long have you been on treatment?",
+        "options": {
+          "under_4_weeks": "Under 4 weeks",
+          "1_3_months": "1-3 months",
+          "3_6_months": "3-6 months",
+          "6_12_months": "6-12 months",
+          "over_1_year": "Over 1 year"
+        }
+      },
+      "baselineStrengthFrequency": {
+        "question": "Before starting treatment, how many days a week did you do strength training?",
+        "options": {
+          "none": "None",
+          "one_two": "1-2 days",
+          "three_plus": "3 days or more",
+          "unsure": "I don't remember"
+        }
+      },
+      "availableDays": {
+        "question": "How many days a week can you train right now?",
+        "options": {
+          "0": "0 days",
+          "1-2": "1-2 days",
+          "3-4": "3-4 days",
+          "5+": "5 days or more"
+        }
+      },
+      "symptoms": {
+        "question": "Which symptoms do you currently have?",
+        "hint": "Pick all that apply. If none apply, continue.",
+        "options": {
+          "nausea": "Nausea",
+          "fatigue": "Fatigue",
+          "dizziness": "Dizziness",
+          "low_appetite": "Low appetite"
+        }
+      },
+      "proteinRations": {
+        "question": "On a normal day, how many protein servings do you eat? (meat, fish, eggs, dairy, legumes)",
+        "options": {
+          "0-1": "0-1 servings",
+          "2-3": "2-3 servings",
+          "4-5": "4-5 servings",
+          "6+": "6 or more servings"
+        }
+      }
+    },
+    "calculating": "Calculating your diagnostic...",
+    "emailGate": {
+      "title": "Your diagnostic is ready",
+      "body": "Enter your email to see it. We'll process the answers related to your health (symptoms, treatment) — we need your explicit consent for that.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "consentHealth": "I agree that Muscle Keeper processes the health data I provided (symptoms, treatment) to generate this diagnostic. I can request deletion at any time.",
+      "consentMarketing": "I want to receive the diagnostic and content about training and protein on GLP-1 treatments by email (optional).",
+      "submit": "See my diagnostic",
+      "submitting": "Sending...",
+      "errorEmail": "Enter a valid email.",
+      "errorConsent": "We need your consent to process the health data.",
+      "errorGeneric": "Something went wrong. Try again in a few seconds."
+    },
+    "result": {
+      "title": "Your diagnostic",
+      "riskLevel": {
+        "label": "Risk level for your muscle",
+        "baix": "Low risk",
+        "mitja": "Medium risk",
+        "alt": "High risk"
+      },
+      "cards": {
+        "weightLost": "Weight lost since you started",
+        "estimatedLeanLost": "Muscle lost (estimated)",
+        "leanLossRatio": "% of weight lost that is muscle",
+        "proteinFloor": "Your daily protein floor",
+        "proteinGap": "You're short by, approximately",
+        "projected6m": "Projected muscle loss at 6 months if nothing changes",
+        "bmrDrop": "Estimated drop in your resting metabolism"
+      },
+      "units": {
+        "kg": "kg",
+        "g": "g",
+        "kcalDay": "kcal/day",
+        "pct": "%"
+      },
+      "disclaimerBox": "This is a rough estimate based on general patterns, not a clinical diagnosis. Every body is different — talk to your doctor or a registered dietitian before making decisions.",
+      "ctaTitle": "This doesn't fix itself",
+      "ctaBody": "We're building the training and nutrition program that goes with this diagnostic, designed for both good days and nausea days. We'll email you as soon as it's ready.",
+      "ctaConfirm": "Done — check your email",
+      "restart": "Start over"
+    }
+  },
+  "footer": {
+    "disclaimer": "Muscle Keeper is not medical advice and does not replace your doctor or endocrinologist. Never change your dose based on this app.",
+    "privacyLink": "Privacy",
+    "rights": "Muscle Keeper"
+  },
+  "privacy": {
+    "title": "Privacy and health data",
+    "updated": "Last updated: July 2026",
+    "intro": "Your answers about treatment, symptoms and weight are health data (a special category under GDPR Article 9). We handle them under the following rules, no exceptions.",
+    "sections": [
+      {
+        "title": "What we store",
+        "body": "Your email, your quiz answers and the calculated diagnostic. Nothing else, and none of it is shared with third parties for advertising purposes."
+      },
+      {
+        "title": "What we use it for",
+        "body": "Only to generate your diagnostic and, if you accept it separately, to send you content related to Muscle Keeper. Never for ad profiling."
+      },
+      {
+        "title": "Where it lives",
+        "body": "On servers within the European Union, with restricted, protected access."
+      },
+      {
+        "title": "How to delete your data",
+        "body": "You can request full deletion (not deactivation) at any time by writing to {contactEmail}."
+      }
+    ]
+  }
+}

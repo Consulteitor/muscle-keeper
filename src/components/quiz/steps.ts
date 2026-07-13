@@ -45,5 +45,5 @@ export const STEPS: StepConfig[] = [
     kind: "multi",
     options: ["nausea", "fatigue", "dizziness", "low_appetite"],
   },
-  { field: "proteinRations", kind: "single", options: ["0-1", "2-3", "4-5", "6+"] },
+  { field: "proteinRations", kind: "single", options: ["0-1", "2", "3", "4+"] },
 ];

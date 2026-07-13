@@ -26,7 +26,32 @@
       ]
     },
     "disclaimerNote": "No és una prova mèdica ni mesura directament la teva composició corporal. És una estimació orientativa basada en les teves respostes.",
-    "secondaryCta": "Calcular el meu risc"
+    "secondaryCta": "Calcular el meu risc",
+    "faq": {
+      "title": "Preguntes freqüents sobre GLP-1 i massa muscular",
+      "items": [
+        {
+          "question": "Els tractaments GLP-1 et poden fer perdre múscul?",
+          "answer": "Part del pes perdut durant un tractament GLP-1 pot procedir de la massa magra, que inclou múscul, aigua i altres teixits. La proporció varia entre persones i no es pot conèixer amb precisió només amb una bàscula convencional."
+        },
+        {
+          "question": "Com puc saber si estic perdent massa muscular?",
+          "answer": "Una bàscula normal no distingeix entre greix i massa magra. Les proves de composició corporal poden oferir més informació, mentre que factors com la velocitat de pèrdua de pes, la força, l'activitat física i la ingesta de proteïna permeten fer una estimació orientativa del risc."
+        },
+        {
+          "question": "Quanta proteïna necessito durant un tractament GLP-1?",
+          "answer": "Depèn del teu pes, edat, activitat, estat de salut i objectiu. Muscle Keeper ofereix una referència orientativa, però un dietista-nutricionista pot ajustar la quantitat a la teva situació personal."
+        },
+        {
+          "question": "Caminar és suficient per conservar el múscul?",
+          "answer": "Caminar és beneficiós per a la salut, però no proporciona el mateix estímul muscular que l'entrenament de força. Per conservar múscul durant una pèrdua de pes sol ser important incloure algun tipus de treball de força adaptat a la capacitat de cada persona."
+        },
+        {
+          "question": "Què passa si tinc nàusees o poca gana?",
+          "answer": "Les nàusees i la falta de gana poden dificultar menjar prou proteïna i mantenir una rutina d'entrenament. No modifiquis la medicació pel teu compte. Si els símptomes són intensos o persistents, comenta'ls amb el professional que supervisa el teu tractament."
+        }
+      ]
+    }
   },
   "quiz": {
     "progress": "Pas {step} de {total}",
@@ -111,23 +136,24 @@
       },
       "proteinRations": {
         "question": "En un dia normal, en quants àpats inclous una font clara de proteïna?",
+        "hint": "Per exemple: ous, carn, peix, làctics rics en proteïna, tofu, llegums o proteïna en pols.",
         "options": {
-          "0-1": "0-1 racions",
-          "2-3": "2-3 racions",
-          "4-5": "4-5 racions",
-          "6+": "6 racions o més"
+          "0-1": "En cap àpat o en un",
+          "2": "En 2 àpats",
+          "3": "En 3 àpats",
+          "4+": "En 4 àpats o més"
         }
       }
     },
     "calculating": "Estimant el teu nivell de risc…",
     "emailGate": {
-      "title": "La teva estimació ja està calculada",
-      "body": "Introdueix el teu email per veure el resultat i rebre'n una còpia. Com que les teves respostes inclouen informació sobre salut, necessitem el teu consentiment explícit per processar-les.",
+      "title": "Desbloqueja la teva anàlisi completa",
+      "body": "Introdueix el teu email per desbloquejar les xifres, veure quins factors hi influeixen més i rebre'n una còpia.",
       "emailLabel": "Email",
       "emailPlaceholder": "tu@email.com",
       "consentHealth": "Accepto que Muscle Keeper processi les dades de salut que he facilitat, inclosos el meu tractament i els meus símptomes, per calcular aquesta estimació. Puc retirar el consentiment i demanar que s'esborrin les meves dades en qualsevol moment.",
       "consentMarketing": "Vull rebre per email el meu resultat i contingut de Muscle Keeper sobre força, proteïna i tractaments GLP-1. És opcional i me'n puc donar de baixa en qualsevol moment.",
-      "submit": "Veure el meu resultat",
+      "submit": "Veure la meva anàlisi completa",
       "submitting": "Calculant…",
       "errorEmail": "Introdueix un email vàlid.",
       "errorConsent": "Necessitem el teu consentiment explícit per processar aquestes respostes i calcular el resultat.",
@@ -141,6 +167,26 @@
         "mitja": "Risc estimat moderat",
         "alt": "Risc estimat alt"
       },
+      "interpretation": {
+        "baix": "Les teves respostes mostren diversos factors que ajuden a conservar la massa muscular, tot i que continua sent important vigilar la força i la proteïna.",
+        "mitja": "Les teves respostes indiquen diversos factors que podrien augmentar la pèrdua de massa magra durant el tractament.",
+        "alt": "Les teves respostes combinen diversos factors associats amb un risc més alt de perdre massa magra. Convé revisar-los aviat amb un professional."
+      },
+      "factorsTitle": "Què està influint més en el teu resultat",
+      "factors": {
+        "noCurrentTraining": "Actualment no fas entrenament de força.",
+        "noBaselineTraining": "Ja parties d'un nivell baix d'entrenament de força abans de començar el tractament.",
+        "lowProteinMeals": "Inclous una font de proteïna en pocs àpats.",
+        "fastWeightLoss": "La teva velocitat de pèrdua de pes és elevada, cosa associada a una pèrdua més alta de massa magra.",
+        "longTreatment": "Portes diversos mesos en tractament, cosa que augmenta el temps d'exposició al risc.",
+        "lowAppetite": "La poca gana pot dificultar que arribis a un consum suficient de proteïna.",
+        "nauseaFatigue": "Les nàusees o la fatiga poden dificultar mantenir l'entrenament i l'alimentació.",
+        "ageRisk": "La teva edat fa més important conservar la massa muscular durant la pèrdua de pes."
+      },
+      "methodology": {
+        "title": "Com hem calculat aquesta estimació",
+        "body": "Hem combinat la teva evolució de pes, edat, sexe, temps en tractament, activitat de força, disponibilitat per entrenar i consum aproximat de proteïna. El resultat identifica patrons de risc, però no mesura directament la teva composició corporal."
+      },
       "cards": {
         "weightLost": "Pes perdut fins ara",
         "estimatedLeanLost": "Pèrdua estimada de massa magra",
@@ -150,6 +196,7 @@
         "projected6m": "Pèrdua de massa magra estimada a 6 mesos si mantens el mateix patró",
         "bmrDrop": "Canvi estimat del metabolisme basal"
       },
+      "secondaryDataToggle": "Veure més dades del càlcul",
       "units": {
         "kg": "kg",
         "g": "g",
@@ -174,6 +221,14 @@
     "intro": "Les teves respostes sobre medicació, símptomes, pes i hàbits poden revelar informació sobre la teva salut i es consideren dades de categoria especial segons l'article 9 del RGPD. Les tractem únicament sota les condicions explicades a continuació.",
     "sections": [
       {
+        "title": "Identitat del responsable del tractament",
+        "body": "Aquesta secció està pendent de completar amb la raó social, el NIF i el domicili del responsable del tractament abans de publicar aquesta app en producció."
+      },
+      {
+        "title": "Dades de contacte",
+        "body": "Per a qualsevol consulta sobre privacitat o per exercir els teus drets, escriu a {contactEmail}."
+      },
+      {
         "title": "Què guardem",
         "body": "Guardem el teu email, les respostes del qüestionari, el resultat calculat i la informació tècnica imprescindible per prestar el servei. No venem aquestes dades ni les compartim amb tercers amb finalitats publicitàries."
       },
@@ -182,12 +237,28 @@
         "body": "Utilitzem aquestes dades per calcular i mostrar el teu resultat. Només si dones un consentiment separat, també utilitzarem el teu email per enviar-te contingut i novetats de Muscle Keeper. No utilitzem les teves dades de salut per a publicitat personalitzada."
       },
       {
-        "title": "On s'emmagatzemen",
-        "body": "Les dades s'emmagatzemen mitjançant proveïdors amb les mesures de seguretat i les garanties de protecció de dades aplicables. Consulta aquesta política per conèixer els proveïdors i les ubicacions concretes."
+        "title": "Base jurídica",
+        "body": "Tractem les teves dades de salut (medicació i símptomes) amb el teu consentiment explícit i separat, que pots retirar en qualsevol moment. Les dades tècniques necessàries per prestar el servei es tracten sobre la base de l'execució de la relació contractual que s'estableix en fer servir aquesta eina."
       },
       {
-        "title": "Com retirar el consentiment o esborrar les teves dades",
-        "body": "Pots retirar el consentiment o demanar l'esborrat de les teves dades personals en qualsevol moment escrivint a {contactEmail}. La retirada no afecta els tractaments fets legalment abans de rebre la teva sol·licitud."
+        "title": "On s'emmagatzemen",
+        "body": "Les dades s'emmagatzemen a Supabase, amb la base de dades configurada en un centre de dades de la Unió Europea. Si en el futur incorporem altres proveïdors (per exemple, per a l'enviament d'emails), els afegirem a aquesta llista abans de posar-los en marxa."
+      },
+      {
+        "title": "Transferències internacionals",
+        "body": "Actualment no transferim les teves dades personals fora de l'Espai Econòmic Europeu. Si això canviés, actualitzaríem aquesta política abans d'aplicar-ho i, quan calgui, demanaríem el teu consentiment."
+      },
+      {
+        "title": "Quant de temps conservem les teves dades",
+        "body": "Els terminis de conservació concrets encara estan pendents de definir. Fins que es publiquin aquí, pots demanar l'esborrat de les teves dades en qualsevol moment escrivint a {contactEmail}."
+      },
+      {
+        "title": "Decisions automatitzades",
+        "body": "El resultat que calculem és una estimació informativa, no una decisió automatitzada amb efectes legals o significatius sobre tu. No s'utilitza per acceptar o denegar cap servei, ni per prendre decisions sobre el teu tractament mèdic."
+      },
+      {
+        "title": "Els teus drets",
+        "body": "Tens dret a accedir a les teves dades, rectificar-les, sol·licitar-ne la supressió, limitar-ne o oposar-te al tractament, i demanar-ne la portabilitat. També pots retirar el consentiment en qualsevol moment i presentar una reclamació davant l'autoritat de protecció de dades del teu país (a Espanya, l'AEPD) si consideres que no hem tractat les teves dades correctament. Pots exercir qualsevol d'aquests drets escrivint a {contactEmail}."
       }
     ]
   }

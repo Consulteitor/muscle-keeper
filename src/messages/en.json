@@ -26,7 +26,32 @@
       ]
     },
     "disclaimerNote": "This is not a medical test and does not directly measure your body composition. It is a general estimate based on your answers.",
-    "secondaryCta": "Calculate my risk"
+    "secondaryCta": "Calculate my risk",
+    "faq": {
+      "title": "Frequently asked questions about GLP-1 and muscle mass",
+      "items": [
+        {
+          "question": "Can GLP-1 treatments cause muscle loss?",
+          "answer": "Some of the weight lost during GLP-1 treatment may come from lean mass, which includes muscle, water and other tissues. The proportion varies from person to person and cannot be measured accurately using a standard scale alone."
+        },
+        {
+          "question": "How can I tell whether I'm losing muscle mass?",
+          "answer": "A standard scale cannot distinguish fat from lean mass. Body-composition tests can provide more information, while factors such as weight-loss rate, strength, physical activity and protein intake can help estimate risk."
+        },
+        {
+          "question": "How much protein do I need during GLP-1 treatment?",
+          "answer": "It depends on your weight, age, activity, health and goal. Muscle Keeper provides a general reference, but a registered dietitian can tailor the amount to your individual situation."
+        },
+        {
+          "question": "Is walking enough to preserve muscle?",
+          "answer": "Walking is beneficial for health, but it does not provide the same muscle stimulus as strength training. Preserving muscle during weight loss usually requires some form of strength work adapted to the person's ability."
+        },
+        {
+          "question": "What if I have nausea or low appetite?",
+          "answer": "Nausea and low appetite can make it harder to eat enough protein and maintain a training routine. Do not change your medication on your own. If symptoms are severe or persistent, discuss them with the professional supervising your treatment."
+        }
+      ]
+    }
   },
   "quiz": {
     "progress": "Step {step} of {total}",
@@ -111,23 +136,24 @@
       },
       "proteinRations": {
         "question": "On a typical day, how many meals include a clear source of protein?",
+        "hint": "For example: eggs, meat, fish, high-protein dairy, tofu, legumes or protein powder.",
         "options": {
-          "0-1": "0-1 servings",
-          "2-3": "2-3 servings",
-          "4-5": "4-5 servings",
-          "6+": "6 or more servings"
+          "0-1": "In none or one meal",
+          "2": "In 2 meals",
+          "3": "In 3 meals",
+          "4+": "In 4 meals or more"
         }
       }
     },
     "calculating": "Estimating your risk level…",
     "emailGate": {
-      "title": "Your estimate is ready",
-      "body": "Enter your email to see the result and receive a copy. Because your answers include health information, we need your explicit consent to process them.",
+      "title": "Unlock your full analysis",
+      "body": "Enter your email to unlock the figures, see which factors are having the greatest impact and receive a copy.",
       "emailLabel": "Email",
       "emailPlaceholder": "you@email.com",
       "consentHealth": "I consent to Muscle Keeper processing the health data I provided, including my treatment and symptoms, to calculate this estimate. I can withdraw my consent and request deletion of my data at any time.",
       "consentMarketing": "I want to receive my result and Muscle Keeper content about strength, protein and GLP-1 treatment by email. This is optional, and I can unsubscribe at any time.",
-      "submit": "See my result",
+      "submit": "See my full analysis",
       "submitting": "Calculating…",
       "errorEmail": "Enter a valid email.",
       "errorConsent": "We need your explicit consent to process these answers and calculate the result.",
@@ -141,6 +167,26 @@
         "mitja": "Moderate estimated risk",
         "alt": "High estimated risk"
       },
+      "interpretation": {
+        "baix": "Your answers show several factors that support muscle preservation, although strength and protein still deserve attention.",
+        "mitja": "Your answers indicate several factors that may increase lean mass loss during treatment.",
+        "alt": "Your answers combine several factors associated with a higher risk of lean mass loss. It is worth reviewing them with a professional soon."
+      },
+      "factorsTitle": "What is having the greatest impact on your result",
+      "factors": {
+        "noCurrentTraining": "You are not currently doing strength training.",
+        "noBaselineTraining": "You already had a low level of strength training before starting treatment.",
+        "lowProteinMeals": "You include a clear protein source in relatively few meals.",
+        "fastWeightLoss": "Your current rate of weight loss is high, which is associated with greater lean mass loss.",
+        "longTreatment": "You've been on treatment for several months, which increases your time of exposure to the risk.",
+        "lowAppetite": "Low appetite may make it harder to get enough protein.",
+        "nauseaFatigue": "Nausea or fatigue can make it harder to keep up training and eating well.",
+        "ageRisk": "Your age makes preserving muscle during weight loss especially important."
+      },
+      "methodology": {
+        "title": "How we calculated this estimate",
+        "body": "We combined your weight change, age, sex, time on treatment, strength activity, training availability and approximate protein intake. The result identifies risk patterns but does not directly measure your body composition."
+      },
       "cards": {
         "weightLost": "Weight lost so far",
         "estimatedLeanLost": "Estimated lean mass loss",
@@ -150,6 +196,7 @@
         "projected6m": "Estimated lean mass loss at 6 months if your current pattern continues",
         "bmrDrop": "Estimated change in resting metabolism"
       },
+      "secondaryDataToggle": "See more calculation details",
       "units": {
         "kg": "kg",
         "g": "g",
@@ -174,6 +221,14 @@
     "intro": "Your answers about medication, symptoms, weight and habits may reveal information about your health and are considered special-category data under Article 9 of the GDPR. We process them only under the conditions explained below.",
     "sections": [
       {
+        "title": "Data controller identity",
+        "body": "This section is pending completion with the legal name, tax ID and registered address of the data controller before this app goes into production."
+      },
+      {
+        "title": "Contact details",
+        "body": "For any privacy question or to exercise your rights, write to {contactEmail}."
+      },
+      {
         "title": "What we store",
         "body": "We store your email, quiz answers, calculated result and the technical information required to provide the service. We do not sell this data or share it with third parties for advertising purposes."
       },
@@ -182,12 +237,28 @@
         "body": "We use this data to calculate and display your result. Only when you provide separate consent will we also use your email to send Muscle Keeper content and updates. We do not use your health data for personalised advertising."
       },
       {
-        "title": "Where your data is stored",
-        "body": "Data is stored using providers that apply appropriate security measures and data-protection safeguards. See this policy for the specific providers and storage locations."
+        "title": "Legal basis",
+        "body": "We process your health data (medication and symptoms) based on your explicit, separate consent, which you can withdraw at any time. The technical data needed to provide the service is processed on the basis of performing the contractual relationship established when you use this tool."
       },
       {
-        "title": "How to withdraw consent or delete your data",
-        "body": "You can withdraw your consent or request deletion of your personal data at any time by writing to {contactEmail}. Withdrawal does not affect processing carried out lawfully before we receive your request."
+        "title": "Where your data is stored",
+        "body": "Data is stored in Supabase, with the database configured in a European Union data centre. If we add other providers in the future (for example, for sending emails), we will add them to this list before switching them on."
+      },
+      {
+        "title": "International transfers",
+        "body": "We do not currently transfer your personal data outside the European Economic Area. If this were to change, we would update this policy before doing so and, where required, ask for your consent."
+      },
+      {
+        "title": "How long we keep your data",
+        "body": "Specific retention periods are still pending definition. Until they are published here, you can request deletion of your data at any time by writing to {contactEmail}."
+      },
+      {
+        "title": "Automated decisions",
+        "body": "The result we calculate is an informational estimate, not an automated decision with legal or similarly significant effects on you. It is not used to accept or deny any service, or to make decisions about your medical treatment."
+      },
+      {
+        "title": "Your rights",
+        "body": "You have the right to access your data, rectify it, request its erasure, restrict or object to its processing, and request portability. You can also withdraw your consent at any time and file a complaint with your country's data protection authority (in Spain, the AEPD) if you believe we have not handled your data correctly. You can exercise any of these rights by writing to {contactEmail}."
       }
     ]
   }

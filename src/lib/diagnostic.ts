@@ -23,7 +23,7 @@ export type AvailableDays = "0" | "1-2" | "3-4" | "5+";
 
 export type Symptom = "nausea" | "fatigue" | "dizziness" | "low_appetite";
 
-export type ProteinRations = "0-1" | "2-3" | "4-5" | "6+";
+export type ProteinMeals = "0-1" | "2" | "3" | "4+";
 
 export interface QuizAnswers {
   sex: Sex;
@@ -37,10 +37,20 @@ export interface QuizAnswers {
   baselineStrengthFrequency: StrengthFrequency;
   availableDays: AvailableDays;
   symptoms: Symptom[];
-  proteinRations: ProteinRations;
+  proteinRations: ProteinMeals;
 }
 
 export type RiskLevel = "baix" | "mitja" | "alt";
+
+export type ResultFactor =
+  | "noCurrentTraining"
+  | "noBaselineTraining"
+  | "lowProteinMeals"
+  | "fastWeightLoss"
+  | "longTreatment"
+  | "lowAppetite"
+  | "nauseaFatigue"
+  | "ageRisk";
 
 export interface DiagnosticResult {
   weightLostKg: number;
@@ -54,6 +64,7 @@ export interface DiagnosticResult {
   projected6mLeanLossKg: number;
   bmrDropKcal: number;
   weeksOnTreatment: number;
+  topFactors: ResultFactor[];
 }
 
 const TREATMENT_WEEKS_MIDPOINT: Record<TreatmentDuration, number> = {
@@ -71,16 +82,21 @@ const BASE_LEAN_LOSS_RATIO: Record<StrengthFrequency, number> = {
   unsure: 0.3,
 };
 
-const PROTEIN_RATIONS_MIDPOINT: Record<ProteinRations, number> = {
+// Nombre de menjars amb una font clara de proteïna en un dia normal (no "racions",
+// massa ambigu: veure feedback de revisió del copy).
+const PROTEIN_MEALS_MIDPOINT: Record<ProteinMeals, number> = {
   "0-1": 0.5,
-  "2-3": 2.5,
-  "4-5": 4.5,
-  "6+": 6.5,
+  "2": 2,
+  "3": 3,
+  "4+": 4.5,
 };
 
-const GRAMS_PER_RATION = 20;
+const GRAMS_PER_PROTEIN_MEAL = 25;
 const PROTEIN_FLOOR_G_PER_KG = 1.6;
 const KCAL_PER_KG_LEAN_MASS = 13;
+const FAST_WEIGHT_LOSS_KG_PER_WEEK = 0.5;
+const LONG_TREATMENT_WEEKS = 26;
+const AGE_RISK_THRESHOLD = 50;
 
 /**
  * Estimació orientativa basada en patrons generals descrits a la literatura sobre
@@ -99,7 +115,7 @@ export function computeDiagnostic(answers: QuizAnswers): DiagnosticResult {
       : 0;
 
   let leanLossRatio = BASE_LEAN_LOSS_RATIO[answers.baselineStrengthFrequency];
-  if (age >= 50) leanLossRatio += 0.03;
+  if (age >= AGE_RISK_THRESHOLD) leanLossRatio += 0.03;
   leanLossRatio = Math.min(leanLossRatio, 0.45);
 
   const estimatedLeanLostKg = weightLostKg * leanLossRatio;
@@ -108,7 +124,7 @@ export function computeDiagnostic(answers: QuizAnswers): DiagnosticResult {
     answers.currentWeightKg * PROTEIN_FLOOR_G_PER_KG,
   );
   const baselineProteinG = Math.round(
-    PROTEIN_RATIONS_MIDPOINT[answers.proteinRations] * GRAMS_PER_RATION,
+    PROTEIN_MEALS_MIDPOINT[answers.proteinRations] * GRAMS_PER_PROTEIN_MEAL,
   );
   const proteinGapG = Math.max(0, proteinFloorG - baselineProteinG);
 
@@ -128,6 +144,19 @@ export function computeDiagnostic(answers: QuizAnswers): DiagnosticResult {
     proteinGapG,
   });
 
+  const weeklyWeightLossKg =
+    weeksOnTreatment > 0 ? weightLostKg / weeksOnTreatment : 0;
+
+  const topFactors = computeTopFactors({
+    availableDays: answers.availableDays,
+    baselineStrengthFrequency: answers.baselineStrengthFrequency,
+    proteinRations: answers.proteinRations,
+    weeklyWeightLossKg,
+    weeksOnTreatment,
+    symptoms: answers.symptoms,
+    age,
+  });
+
   return {
     weightLostKg: round1(weightLostKg),
     pctWeightLost: round1(pctWeightLost * 100),
@@ -140,6 +169,7 @@ export function computeDiagnostic(answers: QuizAnswers): DiagnosticResult {
     projected6mLeanLossKg: round1(projected6mLeanLossKg),
     bmrDropKcal,
     weeksOnTreatment,
+    topFactors,
   };
 }
 
@@ -161,6 +191,42 @@ function computeRiskLevel({
     return "mitja";
   }
   return "baix";
+}
+
+/**
+ * Fins a 3 factors, ordenats per rellevància, que expliquen el resultat a l'usuari.
+ * No és una anàlisi causal — només assenyala quines respostes pesen més al càlcul.
+ */
+function computeTopFactors(input: {
+  availableDays: AvailableDays;
+  baselineStrengthFrequency: StrengthFrequency;
+  proteinRations: ProteinMeals;
+  weeklyWeightLossKg: number;
+  weeksOnTreatment: number;
+  symptoms: Symptom[];
+  age: number;
+}): ResultFactor[] {
+  const candidates: Array<[ResultFactor, boolean]> = [
+    ["noCurrentTraining", input.availableDays === "0"],
+    ["noBaselineTraining", input.baselineStrengthFrequency === "none"],
+    [
+      "lowProteinMeals",
+      input.proteinRations === "0-1" || input.proteinRations === "2",
+    ],
+    ["fastWeightLoss", input.weeklyWeightLossKg > FAST_WEIGHT_LOSS_KG_PER_WEEK],
+    ["longTreatment", input.weeksOnTreatment >= LONG_TREATMENT_WEEKS],
+    ["lowAppetite", input.symptoms.includes("low_appetite")],
+    [
+      "nauseaFatigue",
+      input.symptoms.includes("nausea") || input.symptoms.includes("fatigue"),
+    ],
+    ["ageRisk", input.age >= AGE_RISK_THRESHOLD],
+  ];
+
+  return candidates
+    .filter(([, present]) => present)
+    .slice(0, 3)
+    .map(([factor]) => factor);
 }
 
 function round1(n: number): number {

@@ -74,9 +74,16 @@ export function QuizStep({
     );
   }
 
+  const singleHint = t.has(`fields.${step.field}.hint`)
+    ? t(`fields.${step.field}.hint`)
+    : undefined;
+
   return (
     <div>
       <h2 className="text-2xl font-semibold text-balance">{question}</h2>
+      {singleHint && (
+        <p className="mt-2 text-sm text-muted-foreground">{singleHint}</p>
+      )}
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
         {step.options?.map((opt) => {
           const active = value === opt;

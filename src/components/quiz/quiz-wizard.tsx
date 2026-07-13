@@ -96,8 +96,8 @@ export function QuizWizard({ locale }: { locale: string }) {
     );
   }
 
-  if (phase === "gate") {
-    return <EmailGate onSubmit={handleGateSubmit} />;
+  if (phase === "gate" && result) {
+    return <EmailGate result={result} onSubmit={handleGateSubmit} />;
   }
 
   if (phase === "result" && result) {

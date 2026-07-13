@@ -11,6 +11,20 @@ export default async function LandingPage({
   const t = await getTranslations("landing");
 
   const steps = t.raw("howItWorks.steps") as string[];
+  const faqItems = t.raw("faq.items") as { question: string; answer: string }[];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <main className="flex flex-1 flex-col">
@@ -69,6 +83,27 @@ export default async function LandingPage({
           </Link>
         </div>
       </section>
+
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="text-2xl font-semibold">{t("faq.title")}</h2>
+          <div className="mt-6 flex flex-col gap-6">
+            {faqItems.map((item) => (
+              <div key={item.question}>
+                <h3 className="text-base font-semibold">{item.question}</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   );
 }

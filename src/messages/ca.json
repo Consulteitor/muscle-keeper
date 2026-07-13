@@ -1,41 +1,41 @@
 {
   "meta": {
-    "title": "Muscle Keeper — no perdis múscul amb el teu tractament GLP-1",
-    "description": "Calcula en 2 minuts quant múscul estàs perdent amb Ozempic, Wegovy, Mounjaro i similars, i quin és el teu mínim diari de proteïna."
+    "title": "Muscle Keeper — protegeix la massa muscular durant el tractament GLP-1",
+    "description": "Estima en 2 minuts el teu risc de perdre massa muscular durant un tractament amb Ozempic, Wegovy, Mounjaro i altres GLP-1, i calcula un objectiu orientatiu de proteïna."
   },
   "nav": {
     "brand": "Muscle Keeper"
   },
   "landing": {
     "hero": {
-      "eyebrow": "Per a persones en tractament amb Ozempic, Wegovy, Mounjaro i similars",
-      "title": "Perdràs pes. La pregunta és què perdràs amb ell.",
-      "subtitle": "Sense entrenament de força ni proteïna suficient, fins a un terç del que perds amb un GLP-1 és múscul, no greix. Respon 12 preguntes i calcula el teu risc real.",
-      "cta": "Comença el diagnòstic (2 minuts)"
+      "eyebrow": "Per a persones que utilitzen Ozempic, Wegovy, Mounjaro o altres tractaments GLP-1",
+      "title": "Estàs perdent pes. La pregunta és quant múscul estàs conservant.",
+      "subtitle": "Part del pes perdut durant un tractament GLP-1 pot ser massa magra, no només greix. Respon 12 preguntes i obtén una estimació personalitzada del teu risc.",
+      "cta": "Calcular el meu risc — 2 minuts"
     },
     "problem": {
       "title": "El múscul que perds no torna sol",
-      "body": "Els fàrmacs GLP-1 són molt efectius perdent pes, però no distingeixen entre greix i múscul. La pèrdua de massa magra accelera la sarcopènia, baixa el teu metabolisme basal i fa més probable l'efecte rebot quan deixis el tractament. Res d'això t'ho explica la teva injecció."
+      "body": "Els tractaments GLP-1 poden produir una pèrdua de pes important. Però el pes total no et diu quant has perdut de greix i quant de massa magra. Sense prou proteïna i estímul muscular, pots arribar a un número més baix a la bàscula sense conservar tot el múscul que necessites."
     },
     "howItWorks": {
       "title": "Com funciona",
       "steps": [
-        "Respons 12 preguntes sobre el teu tractament, el teu entrenament i la teva alimentació.",
-        "Calculem una estimació de quant múscul estàs perdent i quin és el teu mínim diari de proteïna.",
-        "Reps el teu diagnòstic per email, amb el que pots fer-hi."
+        "Respon 12 preguntes sobre el teu tractament, la teva evolució, la teva alimentació i l'entrenament que fas.",
+        "Estimem el teu risc de pèrdua de massa muscular i un objectiu diari orientatiu de proteïna.",
+        "Veus el resultat al moment i reps per email una còpia amb els passos següents."
       ]
     },
-    "disclaimerNote": "Això no és un test mèdic. És una estimació orientativa per entendre la teva situació, no un diagnòstic clínic.",
-    "secondaryCta": "Comença el diagnòstic"
+    "disclaimerNote": "No és una prova mèdica ni mesura directament la teva composició corporal. És una estimació orientativa basada en les teves respostes.",
+    "secondaryCta": "Calcular el meu risc"
   },
   "quiz": {
     "progress": "Pas {step} de {total}",
     "back": "Enrere",
     "next": "Continua",
-    "selectAtLeastOne": "Tria almenys una opció, o continua si no en tens cap.",
+    "selectAtLeastOne": "Selecciona totes les opcions que corresponguin. Si no tens cap símptoma, pots continuar.",
     "fields": {
       "sex": {
-        "question": "Quin és el teu sexe?",
+        "question": "Quin és el teu sexe biològic?",
         "options": { "female": "Dona", "male": "Home" }
       },
       "birthYear": {
@@ -55,11 +55,11 @@
         "placeholder": "P. ex. 92"
       },
       "targetWeightKg": {
-        "question": "Quin és el teu pes objectiu? (kg)",
+        "question": "A quin pes t'agradaria arribar? (kg)",
         "placeholder": "P. ex. 70"
       },
       "medication": {
-        "question": "Quin medicament fas servir?",
+        "question": "Quin tractament estàs utilitzant?",
         "options": {
           "semaglutide_ozempic": "Semaglutida (Ozempic)",
           "semaglutide_wegovy": "Semaglutida (Wegovy)",
@@ -91,7 +91,7 @@
         }
       },
       "availableDays": {
-        "question": "Quants dies a la setmana pots entrenar ara mateix?",
+        "question": "Si tinguessis un pla adaptat, quants dies a la setmana podries fer entrenament de força?",
         "options": {
           "0": "0 dies",
           "1-2": "1-2 dies",
@@ -100,8 +100,8 @@
         }
       },
       "symptoms": {
-        "question": "Quins símptomes tens actualment?",
-        "hint": "Tria tots els que apliquin. Si no en tens cap, continua.",
+        "question": "Tens actualment algun d'aquests símptomes?",
+        "hint": "Selecciona tots els que corresponguin. Si no en tens cap, continua.",
         "options": {
           "nausea": "Nàusees",
           "fatigue": "Fatiga",
@@ -110,7 +110,7 @@
         }
       },
       "proteinRations": {
-        "question": "Un dia normal, quantes racions de proteïna menges? (carn, peix, ous, làctics, llegums)",
+        "question": "En un dia normal, en quants àpats inclous una font clara de proteïna?",
         "options": {
           "0-1": "0-1 racions",
           "2-3": "2-3 racions",
@@ -119,36 +119,36 @@
         }
       }
     },
-    "calculating": "Calculant el teu diagnòstic...",
+    "calculating": "Estimant el teu nivell de risc…",
     "emailGate": {
-      "title": "El teu diagnòstic ja està a punt",
-      "body": "Introdueix el teu email per veure'l. Processarem les respostes relacionades amb la teva salut (símptomes, tractament) — necessitem el teu consentiment explícit per a això.",
+      "title": "La teva estimació ja està calculada",
+      "body": "Introdueix el teu email per veure el resultat i rebre'n una còpia. Com que les teves respostes inclouen informació sobre salut, necessitem el teu consentiment explícit per processar-les.",
       "emailLabel": "Email",
       "emailPlaceholder": "tu@email.com",
-      "consentHealth": "Accepto que Muscle Keeper processi les dades de salut que he indicat (símptomes, tractament) per generar aquest diagnòstic. Puc demanar que s'esborrin en qualsevol moment.",
-      "consentMarketing": "Vull rebre el diagnòstic i contingut sobre entrenament i proteïna en tractaments GLP-1 per email (opcional).",
-      "submit": "Veure el meu diagnòstic",
-      "submitting": "Enviant...",
+      "consentHealth": "Accepto que Muscle Keeper processi les dades de salut que he facilitat, inclosos el meu tractament i els meus símptomes, per calcular aquesta estimació. Puc retirar el consentiment i demanar que s'esborrin les meves dades en qualsevol moment.",
+      "consentMarketing": "Vull rebre per email el meu resultat i contingut de Muscle Keeper sobre força, proteïna i tractaments GLP-1. És opcional i me'n puc donar de baixa en qualsevol moment.",
+      "submit": "Veure el meu resultat",
+      "submitting": "Calculant…",
       "errorEmail": "Introdueix un email vàlid.",
-      "errorConsent": "Necessitem el teu consentiment per processar les dades de salut.",
+      "errorConsent": "Necessitem el teu consentiment explícit per processar aquestes respostes i calcular el resultat.",
       "errorGeneric": "Alguna cosa ha fallat. Torna-ho a provar d'aquí uns segons."
     },
     "result": {
-      "title": "El teu diagnòstic",
+      "title": "La teva estimació personal",
       "riskLevel": {
-        "label": "Nivell de risc per al teu múscul",
-        "baix": "Risc baix",
-        "mitja": "Risc mitjà",
-        "alt": "Risc alt"
+        "label": "Risc estimat de pèrdua muscular",
+        "baix": "Risc estimat baix",
+        "mitja": "Risc estimat moderat",
+        "alt": "Risc estimat alt"
       },
       "cards": {
-        "weightLost": "Pes perdut des que vas començar",
-        "estimatedLeanLost": "Múscul perdut (estimat)",
-        "leanLossRatio": "% del pes perdut que és múscul",
-        "proteinFloor": "El teu mínim diari de proteïna",
-        "proteinGap": "Et falten al dia, aproximadament",
-        "projected6m": "Projecció de múscul perdut a 6 mesos si res no canvia",
-        "bmrDrop": "Baixada estimada del teu metabolisme basal"
+        "weightLost": "Pes perdut fins ara",
+        "estimatedLeanLost": "Pèrdua estimada de massa magra",
+        "leanLossRatio": "Part estimada de la pèrdua que podria ser massa magra",
+        "proteinFloor": "Objectiu diari orientatiu de proteïna",
+        "proteinGap": "Diferència diària estimada",
+        "projected6m": "Pèrdua de massa magra estimada a 6 mesos si mantens el mateix patró",
+        "bmrDrop": "Canvi estimat del metabolisme basal"
       },
       "units": {
         "kg": "kg",
@@ -156,38 +156,38 @@
         "kcalDay": "kcal/dia",
         "pct": "%"
       },
-      "disclaimerBox": "Això és una estimació orientativa basada en patrons generals, no un diagnòstic clínic. Cada cos és diferent — parla amb el teu metge o un dietista-nutricionista abans de prendre decisions.",
-      "ctaTitle": "Això no s'arregla sol",
-      "ctaBody": "Estem construint el programa d'entrenament i nutrició que va amb aquest diagnòstic, pensat per als dies bons i els dies de nàusees. T'avisarem per email quan estigui a punt.",
-      "ctaConfirm": "Fet — revisa el teu email",
+      "disclaimerBox": "Aquest resultat és una estimació orientativa basada en les teves respostes i en patrons generals. No mesura directament la teva composició corporal ni constitueix un diagnòstic clínic. Comenta'l amb el teu metge o dietista-nutricionista abans de fer canvis importants.",
+      "ctaTitle": "Perdre pes no hauria de significar renunciar al teu múscul",
+      "ctaBody": "Estem construint un programa de força i nutrició adaptat a persones en tractament amb GLP-1: realista quan et trobes bé i també quan tens poca gana, fatiga o nàusees. T'avisarem per email quan estigui disponible.",
+      "ctaConfirm": "Resultat enviat — revisa el teu email",
       "restart": "Tornar a començar"
     }
   },
   "footer": {
-    "disclaimer": "Muscle Keeper no és consell mèdic i no substitueix el teu metge ni el teu endocrí. No modifiquis mai la teva dosi basant-te en aquesta app.",
+    "disclaimer": "Muscle Keeper ofereix informació orientativa i no substitueix el consell del teu metge, endocrí o dietista-nutricionista. No canviïs la medicació ni la dosi basant-te en aquesta app.",
     "privacyLink": "Privacitat",
     "rights": "Muscle Keeper"
   },
   "privacy": {
     "title": "Privacitat i dades de salut",
     "updated": "Última actualització: juliol de 2026",
-    "intro": "Les teves respostes sobre tractament, símptomes i pes són dades de salut (categoria especial segons l'article 9 del RGPD). Les tractem amb les regles següents, sense excepcions.",
+    "intro": "Les teves respostes sobre medicació, símptomes, pes i hàbits poden revelar informació sobre la teva salut i es consideren dades de categoria especial segons l'article 9 del RGPD. Les tractem únicament sota les condicions explicades a continuació.",
     "sections": [
       {
         "title": "Què guardem",
-        "body": "El teu email, les respostes del qüestionari i el diagnòstic calculat. Res més, i res d'això es comparteix amb tercers amb finalitats publicitàries."
+        "body": "Guardem el teu email, les respostes del qüestionari, el resultat calculat i la informació tècnica imprescindible per prestar el servei. No venem aquestes dades ni les compartim amb tercers amb finalitats publicitàries."
       },
       {
         "title": "Per a què ho fem servir",
-        "body": "Només per generar-te el diagnòstic i, si ho acceptes de forma separada, per enviar-te contingut relacionat amb Muscle Keeper. Mai per a perfilat publicitari."
+        "body": "Utilitzem aquestes dades per calcular i mostrar el teu resultat. Només si dones un consentiment separat, també utilitzarem el teu email per enviar-te contingut i novetats de Muscle Keeper. No utilitzem les teves dades de salut per a publicitat personalitzada."
       },
       {
-        "title": "On viu",
-        "body": "En servidors dins la Unió Europea, amb accés restringit i protegit."
+        "title": "On s'emmagatzemen",
+        "body": "Les dades s'emmagatzemen mitjançant proveïdors amb les mesures de seguretat i les garanties de protecció de dades aplicables. Consulta aquesta política per conèixer els proveïdors i les ubicacions concretes."
       },
       {
-        "title": "Com esborrar les teves dades",
-        "body": "Pots demanar l'esborrat complet (no una desactivació) en qualsevol moment escrivint a {contactEmail}."
+        "title": "Com retirar el consentiment o esborrar les teves dades",
+        "body": "Pots retirar el consentiment o demanar l'esborrat de les teves dades personals en qualsevol moment escrivint a {contactEmail}. La retirada no afecta els tractaments fets legalment abans de rebre la teva sol·licitud."
       }
     ]
   }

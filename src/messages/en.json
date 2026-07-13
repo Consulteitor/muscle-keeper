@@ -1,41 +1,41 @@
 {
   "meta": {
-    "title": "Muscle Keeper — don't lose muscle on your GLP-1 treatment",
-    "description": "Calculate in 2 minutes how much muscle you're losing on Ozempic, Wegovy, Mounjaro and similar drugs, and your daily protein floor."
+    "title": "Muscle Keeper — protect your muscle during GLP-1 treatment",
+    "description": "Estimate your risk of losing muscle during treatment with Ozempic, Wegovy, Mounjaro and other GLP-1 medications, plus a suggested daily protein target."
   },
   "nav": {
     "brand": "Muscle Keeper"
   },
   "landing": {
     "hero": {
-      "eyebrow": "For people on Ozempic, Wegovy, Mounjaro and similar treatments",
-      "title": "You're going to lose weight. The question is what you lose with it.",
-      "subtitle": "Without strength training and enough protein, up to a third of what you lose on a GLP-1 is muscle, not fat. Answer 12 questions and calculate your real risk.",
-      "cta": "Start the diagnostic (2 minutes)"
+      "eyebrow": "For people using Ozempic, Wegovy, Mounjaro or other GLP-1 treatments",
+      "title": "You’re losing weight. The question is how much muscle you’re preserving.",
+      "subtitle": "Some of the weight lost during GLP-1 treatment may come from lean mass, not just fat. Answer 12 questions and get a personalised risk estimate.",
+      "cta": "Calculate my risk — 2 minutes"
     },
     "problem": {
       "title": "The muscle you lose doesn't come back on its own",
-      "body": "GLP-1 drugs are very effective at losing weight, but they don't distinguish between fat and muscle. Losing lean mass accelerates sarcopenia, lowers your resting metabolism, and makes rebound weight regain more likely once you stop treatment. None of that gets mentioned in your injection."
+      "body": "GLP-1 treatments can produce substantial weight loss. But total weight does not tell you how much came from fat and how much from lean mass. Without enough protein and muscle stimulus, you may reach a lower number on the scale without preserving all the muscle you need."
     },
     "howItWorks": {
       "title": "How it works",
       "steps": [
-        "You answer 12 questions about your treatment, your training and your eating.",
-        "We calculate an estimate of how much muscle you're losing and your daily protein floor.",
-        "You get your diagnostic by email, along with what you can do about it."
+        "Answer 12 questions about your treatment, progress, diet and current training.",
+        "We estimate your risk of muscle loss and a suggested daily protein target.",
+        "See your result immediately and receive a copy by email with the next steps."
       ]
     },
-    "disclaimerNote": "This isn't a medical test. It's a rough estimate to help you understand your situation, not a clinical diagnosis.",
-    "secondaryCta": "Start the diagnostic"
+    "disclaimerNote": "This is not a medical test and does not directly measure your body composition. It is a general estimate based on your answers.",
+    "secondaryCta": "Calculate my risk"
   },
   "quiz": {
     "progress": "Step {step} of {total}",
     "back": "Back",
     "next": "Continue",
-    "selectAtLeastOne": "Pick at least one option, or continue if none apply.",
+    "selectAtLeastOne": "Select every option that applies. If you have no symptoms, you can continue.",
     "fields": {
       "sex": {
-        "question": "What's your sex?",
+        "question": "What is your biological sex?",
         "options": { "female": "Female", "male": "Male" }
       },
       "birthYear": {
@@ -55,11 +55,11 @@
         "placeholder": "E.g. 92"
       },
       "targetWeightKg": {
-        "question": "What's your target weight? (kg)",
+        "question": "What weight would you like to reach? (kg)",
         "placeholder": "E.g. 70"
       },
       "medication": {
-        "question": "Which medication are you on?",
+        "question": "Which treatment are you using?",
         "options": {
           "semaglutide_ozempic": "Semaglutide (Ozempic)",
           "semaglutide_wegovy": "Semaglutide (Wegovy)",
@@ -91,7 +91,7 @@
         }
       },
       "availableDays": {
-        "question": "How many days a week can you train right now?",
+        "question": "With an adapted plan, how many days a week could you do strength training?",
         "options": {
           "0": "0 days",
           "1-2": "1-2 days",
@@ -100,8 +100,8 @@
         }
       },
       "symptoms": {
-        "question": "Which symptoms do you currently have?",
-        "hint": "Pick all that apply. If none apply, continue.",
+        "question": "Are you currently experiencing any of these symptoms?",
+        "hint": "Select all that apply. If you have none, continue.",
         "options": {
           "nausea": "Nausea",
           "fatigue": "Fatigue",
@@ -110,7 +110,7 @@
         }
       },
       "proteinRations": {
-        "question": "On a normal day, how many protein servings do you eat? (meat, fish, eggs, dairy, legumes)",
+        "question": "On a typical day, how many meals include a clear source of protein?",
         "options": {
           "0-1": "0-1 servings",
           "2-3": "2-3 servings",
@@ -119,36 +119,36 @@
         }
       }
     },
-    "calculating": "Calculating your diagnostic...",
+    "calculating": "Estimating your risk level…",
     "emailGate": {
-      "title": "Your diagnostic is ready",
-      "body": "Enter your email to see it. We'll process the answers related to your health (symptoms, treatment) — we need your explicit consent for that.",
+      "title": "Your estimate is ready",
+      "body": "Enter your email to see the result and receive a copy. Because your answers include health information, we need your explicit consent to process them.",
       "emailLabel": "Email",
       "emailPlaceholder": "you@email.com",
-      "consentHealth": "I agree that Muscle Keeper processes the health data I provided (symptoms, treatment) to generate this diagnostic. I can request deletion at any time.",
-      "consentMarketing": "I want to receive the diagnostic and content about training and protein on GLP-1 treatments by email (optional).",
-      "submit": "See my diagnostic",
-      "submitting": "Sending...",
+      "consentHealth": "I consent to Muscle Keeper processing the health data I provided, including my treatment and symptoms, to calculate this estimate. I can withdraw my consent and request deletion of my data at any time.",
+      "consentMarketing": "I want to receive my result and Muscle Keeper content about strength, protein and GLP-1 treatment by email. This is optional, and I can unsubscribe at any time.",
+      "submit": "See my result",
+      "submitting": "Calculating…",
       "errorEmail": "Enter a valid email.",
-      "errorConsent": "We need your consent to process the health data.",
+      "errorConsent": "We need your explicit consent to process these answers and calculate the result.",
       "errorGeneric": "Something went wrong. Try again in a few seconds."
     },
     "result": {
-      "title": "Your diagnostic",
+      "title": "Your personal estimate",
       "riskLevel": {
-        "label": "Risk level for your muscle",
-        "baix": "Low risk",
-        "mitja": "Medium risk",
-        "alt": "High risk"
+        "label": "Estimated risk of muscle loss",
+        "baix": "Low estimated risk",
+        "mitja": "Moderate estimated risk",
+        "alt": "High estimated risk"
       },
       "cards": {
-        "weightLost": "Weight lost since you started",
-        "estimatedLeanLost": "Muscle lost (estimated)",
-        "leanLossRatio": "% of weight lost that is muscle",
-        "proteinFloor": "Your daily protein floor",
-        "proteinGap": "You're short by, approximately",
-        "projected6m": "Projected muscle loss at 6 months if nothing changes",
-        "bmrDrop": "Estimated drop in your resting metabolism"
+        "weightLost": "Weight lost so far",
+        "estimatedLeanLost": "Estimated lean mass loss",
+        "leanLossRatio": "Estimated share of weight loss that may be lean mass",
+        "proteinFloor": "Suggested daily protein target",
+        "proteinGap": "Estimated daily gap",
+        "projected6m": "Estimated lean mass loss at 6 months if your current pattern continues",
+        "bmrDrop": "Estimated change in resting metabolism"
       },
       "units": {
         "kg": "kg",
@@ -156,38 +156,38 @@
         "kcalDay": "kcal/day",
         "pct": "%"
       },
-      "disclaimerBox": "This is a rough estimate based on general patterns, not a clinical diagnosis. Every body is different — talk to your doctor or a registered dietitian before making decisions.",
-      "ctaTitle": "This doesn't fix itself",
-      "ctaBody": "We're building the training and nutrition program that goes with this diagnostic, designed for both good days and nausea days. We'll email you as soon as it's ready.",
-      "ctaConfirm": "Done — check your email",
+      "disclaimerBox": "This result is a general estimate based on your answers and broad population patterns. It does not directly measure your body composition or constitute a clinical diagnosis. Discuss it with your doctor or registered dietitian before making significant changes.",
+      "ctaTitle": "Losing weight should not mean giving up your muscle",
+      "ctaBody": "We're building a strength and nutrition programme for people using GLP-1 treatments: realistic when you feel well and when you are dealing with low appetite, fatigue or nausea. We'll email you when it becomes available.",
+      "ctaConfirm": "Result sent — check your email",
       "restart": "Start over"
     }
   },
   "footer": {
-    "disclaimer": "Muscle Keeper is not medical advice and does not replace your doctor or endocrinologist. Never change your dose based on this app.",
+    "disclaimer": "Muscle Keeper provides general information and does not replace advice from your doctor, endocrinologist or registered dietitian. Do not change your medication or dose based on this app.",
     "privacyLink": "Privacy",
     "rights": "Muscle Keeper"
   },
   "privacy": {
     "title": "Privacy and health data",
     "updated": "Last updated: July 2026",
-    "intro": "Your answers about treatment, symptoms and weight are health data (a special category under GDPR Article 9). We handle them under the following rules, no exceptions.",
+    "intro": "Your answers about medication, symptoms, weight and habits may reveal information about your health and are considered special-category data under Article 9 of the GDPR. We process them only under the conditions explained below.",
     "sections": [
       {
         "title": "What we store",
-        "body": "Your email, your quiz answers and the calculated diagnostic. Nothing else, and none of it is shared with third parties for advertising purposes."
+        "body": "We store your email, quiz answers, calculated result and the technical information required to provide the service. We do not sell this data or share it with third parties for advertising purposes."
       },
       {
         "title": "What we use it for",
-        "body": "Only to generate your diagnostic and, if you accept it separately, to send you content related to Muscle Keeper. Never for ad profiling."
+        "body": "We use this data to calculate and display your result. Only when you provide separate consent will we also use your email to send Muscle Keeper content and updates. We do not use your health data for personalised advertising."
       },
       {
-        "title": "Where it lives",
-        "body": "On servers within the European Union, with restricted, protected access."
+        "title": "Where your data is stored",
+        "body": "Data is stored using providers that apply appropriate security measures and data-protection safeguards. See this policy for the specific providers and storage locations."
       },
       {
-        "title": "How to delete your data",
-        "body": "You can request full deletion (not deactivation) at any time by writing to {contactEmail}."
+        "title": "How to withdraw consent or delete your data",
+        "body": "You can withdraw your consent or request deletion of your personal data at any time by writing to {contactEmail}. Withdrawal does not affect processing carried out lawfully before we receive your request."
       }
     ]
   }

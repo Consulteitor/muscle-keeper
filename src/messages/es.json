@@ -1,41 +1,41 @@
 {
   "meta": {
-    "title": "Muscle Keeper — no pierdas músculo con tu tratamiento GLP-1",
-    "description": "Calcula en 2 minutos cuánto músculo estás perdiendo con Ozempic, Wegovy, Mounjaro y similares, y cuál es tu mínimo diario de proteína."
+    "title": "Muscle Keeper — protege tu masa muscular durante el tratamiento GLP-1",
+    "description": "Estima en 2 minutos tu riesgo de perder masa muscular durante un tratamiento con Ozempic, Wegovy, Mounjaro y otros GLP-1, y calcula un objetivo orientativo de proteína."
   },
   "nav": {
     "brand": "Muscle Keeper"
   },
   "landing": {
     "hero": {
-      "eyebrow": "Para personas en tratamiento con Ozempic, Wegovy, Mounjaro y similares",
-      "title": "Vas a perder peso. La pregunta es qué vas a perder con él.",
-      "subtitle": "Sin entrenamiento de fuerza ni proteína suficiente, hasta un tercio de lo que pierdes con un GLP-1 es músculo, no grasa. Responde 12 preguntas y calcula tu riesgo real.",
-      "cta": "Empezar el diagnóstico (2 minutos)"
+      "eyebrow": "Para personas que utilizan Ozempic, Wegovy, Mounjaro u otros tratamientos GLP-1",
+      "title": "Estás perdiendo peso. La pregunta es cuánto músculo estás conservando.",
+      "subtitle": "Parte del peso perdido durante un tratamiento GLP-1 puede ser masa magra, no solo grasa. Responde 12 preguntas y obtén una estimación personalizada de tu riesgo.",
+      "cta": "Calcular mi riesgo — 2 minutos"
     },
     "problem": {
       "title": "El músculo que pierdes no vuelve solo",
-      "body": "Los fármacos GLP-1 son muy efectivos perdiendo peso, pero no distinguen entre grasa y músculo. La pérdida de masa magra acelera la sarcopenia, baja tu metabolismo basal y hace más probable el efecto rebote cuando dejes el tratamiento. Nada de esto te lo cuenta tu inyección."
+      "body": "Los tratamientos GLP-1 pueden producir una pérdida de peso importante. Pero el peso total no te dice cuánto has perdido de grasa y cuánto de masa magra. Sin suficiente proteína y estímulo muscular, puedes alcanzar un número más bajo en la báscula sin conservar todo el músculo que necesitas."
       },
     "howItWorks": {
       "title": "Cómo funciona",
       "steps": [
-        "Respondes 12 preguntas sobre tu tratamiento, tu entrenamiento y tu alimentación.",
-        "Calculamos una estimación de cuánto músculo estás perdiendo y cuál es tu mínimo diario de proteína.",
-        "Recibes tu diagnóstico por email, con lo que puedes hacer al respecto."
+        "Responde 12 preguntas sobre tu tratamiento, tu evolución, tu alimentación y el entrenamiento que haces.",
+        "Estimamos tu riesgo de pérdida de masa muscular y un objetivo diario orientativo de proteína.",
+        "Ves el resultado al momento y recibes por email una copia con los siguientes pasos."
       ]
     },
-    "disclaimerNote": "Esto no es un test médico. Es una estimación orientativa para entender tu situación, no un diagnóstico clínico.",
-    "secondaryCta": "Empezar el diagnóstico"
+    "disclaimerNote": "No es una prueba médica ni mide directamente tu composición corporal. Es una estimación orientativa basada en tus respuestas.",
+    "secondaryCta": "Calcular mi riesgo"
   },
   "quiz": {
     "progress": "Paso {step} de {total}",
     "back": "Atrás",
     "next": "Continuar",
-    "selectAtLeastOne": "Elige al menos una opción, o continúa si no tienes ninguno.",
+    "selectAtLeastOne": "Selecciona todas las opciones que correspondan. Si no tienes ningún síntoma, puedes continuar.",
     "fields": {
       "sex": {
-        "question": "¿Cuál es tu sexo?",
+        "question": "¿Cuál es tu sexo biológico?",
         "options": { "female": "Mujer", "male": "Hombre" }
       },
       "birthYear": {
@@ -55,11 +55,11 @@
         "placeholder": "Ej. 92"
       },
       "targetWeightKg": {
-        "question": "¿Cuál es tu peso objetivo? (kg)",
+        "question": "¿Qué peso te gustaría alcanzar? (kg)",
         "placeholder": "Ej. 70"
       },
       "medication": {
-        "question": "¿Qué medicamento usas?",
+        "question": "¿Qué tratamiento estás utilizando?",
         "options": {
           "semaglutide_ozempic": "Semaglutida (Ozempic)",
           "semaglutide_wegovy": "Semaglutida (Wegovy)",
@@ -91,7 +91,7 @@
         }
       },
       "availableDays": {
-        "question": "¿Cuántos días a la semana puedes entrenar ahora mismo?",
+        "question": "Si tuvieras un plan adaptado, ¿cuántos días a la semana podrías hacer entrenamiento de fuerza?",
         "options": {
           "0": "0 días",
           "1-2": "1-2 días",
@@ -100,8 +100,8 @@
         }
       },
       "symptoms": {
-        "question": "¿Qué síntomas tienes actualmente?",
-        "hint": "Elige todos los que apliquen. Si no tienes ninguno, continúa.",
+        "question": "¿Tienes actualmente alguno de estos síntomas?",
+        "hint": "Selecciona todos los que correspondan. Si no tienes ninguno, continúa.",
         "options": {
           "nausea": "Náuseas",
           "fatigue": "Fatiga",
@@ -110,7 +110,7 @@
         }
       },
       "proteinRations": {
-        "question": "Un día normal, ¿cuántas raciones de proteína comes? (carne, pescado, huevos, lácteos, legumbres)",
+        "question": "En un día normal, ¿en cuántas comidas incluyes una fuente clara de proteína?",
         "options": {
           "0-1": "0-1 raciones",
           "2-3": "2-3 raciones",
@@ -119,36 +119,36 @@
         }
       }
     },
-    "calculating": "Calculando tu diagnóstico...",
+    "calculating": "Estimando tu nivel de riesgo…",
     "emailGate": {
-      "title": "Tu diagnóstico está listo",
-      "body": "Introduce tu email para verlo. Vamos a procesar las respuestas relacionadas con tu salud (síntomas, tratamiento) — necesitamos tu consentimiento explícito para eso.",
+      "title": "Tu estimación ya está calculada",
+      "body": "Introduce tu email para ver el resultado y recibir una copia. Como tus respuestas incluyen información sobre salud, necesitamos tu consentimiento explícito para procesarlas.",
       "emailLabel": "Email",
       "emailPlaceholder": "tu@email.com",
-      "consentHealth": "Acepto que Muscle Keeper procese los datos de salud que he indicado (síntomas, tratamiento) para generar este diagnóstico. Puedo pedir que se borren en cualquier momento.",
-      "consentMarketing": "Quiero recibir el diagnóstico y contenido sobre entrenamiento y proteína en tratamientos GLP-1 por email (opcional).",
-      "submit": "Ver mi diagnóstico",
-      "submitting": "Enviando...",
+      "consentHealth": "Acepto que Muscle Keeper procese los datos de salud que he facilitado, incluidos mi tratamiento y mis síntomas, para calcular esta estimación. Puedo retirar mi consentimiento y pedir que se borren mis datos en cualquier momento.",
+      "consentMarketing": "Quiero recibir por email mi resultado y contenido de Muscle Keeper sobre fuerza, proteína y tratamientos GLP-1. Es opcional y puedo darme de baja en cualquier momento.",
+      "submit": "Ver mi resultado",
+      "submitting": "Calculando…",
       "errorEmail": "Introduce un email válido.",
-      "errorConsent": "Necesitamos tu consentimiento para procesar los datos de salud.",
+      "errorConsent": "Necesitamos tu consentimiento explícito para procesar estas respuestas y calcular el resultado.",
       "errorGeneric": "Algo ha fallado. Inténtalo de nuevo en unos segundos."
     },
     "result": {
-      "title": "Tu diagnóstico",
+      "title": "Tu estimación personal",
       "riskLevel": {
-        "label": "Nivel de riesgo para tu músculo",
-        "baix": "Riesgo bajo",
-        "mitja": "Riesgo medio",
-        "alt": "Riesgo alto"
+        "label": "Riesgo estimado de pérdida muscular",
+        "baix": "Riesgo estimado bajo",
+        "mitja": "Riesgo estimado moderado",
+        "alt": "Riesgo estimado alto"
       },
       "cards": {
-        "weightLost": "Peso perdido desde que empezaste",
-        "estimatedLeanLost": "Músculo perdido (estimado)",
-        "leanLossRatio": "% del peso perdido que es músculo",
-        "proteinFloor": "Tu mínimo diario de proteína",
-        "proteinGap": "Te faltan al día, aproximadamente",
-        "projected6m": "Proyección de músculo perdido a 6 meses si nada cambia",
-        "bmrDrop": "Bajada estimada de tu metabolismo basal"
+        "weightLost": "Peso perdido hasta ahora",
+        "estimatedLeanLost": "Pérdida estimada de masa magra",
+        "leanLossRatio": "Parte estimada de la pérdida que podría ser masa magra",
+        "proteinFloor": "Objetivo diario orientativo de proteína",
+        "proteinGap": "Diferencia diaria estimada",
+        "projected6m": "Pérdida de masa magra estimada a 6 meses si mantienes el mismo patrón",
+        "bmrDrop": "Cambio estimado del metabolismo basal"
       },
       "units": {
         "kg": "kg",
@@ -156,38 +156,38 @@
         "kcalDay": "kcal/día",
         "pct": "%"
       },
-      "disclaimerBox": "Esto es una estimación orientativa basada en patrones generales, no un diagnóstico clínico. Cada cuerpo es distinto — habla con tu médico o un dietista-nutricionista antes de tomar decisiones.",
-      "ctaTitle": "Esto no se arregla solo",
-      "ctaBody": "Estamos construyendo el programa de entrenamiento y nutrición que va con este diagnóstico, pensado para los días buenos y los días de náuseas. Te avisaremos por email en cuanto esté listo.",
-      "ctaConfirm": "Hecho — revisa tu email",
+      "disclaimerBox": "Este resultado es una estimación orientativa basada en tus respuestas y en patrones generales. No mide directamente tu composición corporal ni constituye un diagnóstico clínico. Coméntalo con tu médico o dietista-nutricionista antes de hacer cambios importantes.",
+      "ctaTitle": "Perder peso no debería significar renunciar a tu músculo",
+      "ctaBody": "Estamos construyendo un programa de fuerza y nutrición adaptado a personas en tratamiento con GLP-1: realista cuando te encuentras bien y también cuando tienes poco apetito, fatiga o náuseas. Te avisaremos por email cuando esté disponible.",
+      "ctaConfirm": "Resultado enviado — revisa tu email",
       "restart": "Volver a empezar"
     }
   },
   "footer": {
-    "disclaimer": "Muscle Keeper no es consejo médico y no sustituye a tu médico ni a tu endocrino. No modifiques nunca tu dosis basándote en esta app.",
+    "disclaimer": "Muscle Keeper ofrece información orientativa y no sustituye el consejo de tu médico, endocrino o dietista-nutricionista. No cambies tu medicación ni tu dosis basándote en esta app.",
     "privacyLink": "Privacidad",
     "rights": "Muscle Keeper"
   },
   "privacy": {
     "title": "Privacidad y datos de salud",
     "updated": "Última actualización: julio de 2026",
-    "intro": "Tus respuestas sobre tratamiento, síntomas y peso son datos de salud (categoría especial según el artículo 9 del RGPD). Los tratamos con las siguientes reglas, sin excepciones.",
+    "intro": "Tus respuestas sobre medicación, síntomas, peso y hábitos pueden revelar información sobre tu salud y se consideran datos de categoría especial según el artículo 9 del RGPD. Los tratamos únicamente bajo las condiciones explicadas a continuación.",
     "sections": [
       {
         "title": "Qué guardamos",
-        "body": "Tu email, las respuestas del cuestionario y el diagnóstico calculado. Nada más, y nada de esto se comparte con terceros con fines publicitarios."
+        "body": "Guardamos tu email, las respuestas del cuestionario, el resultado calculado y la información técnica imprescindible para prestar el servicio. No vendemos estos datos ni los compartimos con terceros con fines publicitarios."
       },
       {
         "title": "Para qué lo usamos",
-        "body": "Solo para generarte el diagnóstico y, si lo aceptas de forma separada, para enviarte contenido relacionado con Muscle Keeper. Nunca para perfilado publicitario."
+        "body": "Utilizamos estos datos para calcular y mostrar tu resultado. Solo si das un consentimiento separado, también utilizaremos tu email para enviarte contenido y novedades de Muscle Keeper. No utilizamos tus datos de salud para publicidad personalizada."
       },
       {
-        "title": "Dónde vive",
-        "body": "En servidores dentro de la Unión Europea, con acceso restringido y protegido."
+        "title": "Dónde se almacenan",
+        "body": "Los datos se almacenan mediante proveedores con las medidas de seguridad y las garantías de protección de datos aplicables. Consulta esta política para conocer los proveedores y ubicaciones concretas."
       },
       {
-        "title": "Cómo borrar tus datos",
-        "body": "Puedes pedir el borrado completo (no una desactivación) en cualquier momento escribiendo a {contactEmail}."
+        "title": "Cómo retirar tu consentimiento o borrar tus datos",
+        "body": "Puedes retirar tu consentimiento o pedir el borrado de tus datos personales en cualquier momento escribiendo a {contactEmail}. La retirada no afecta a los tratamientos realizados legalmente antes de recibir tu solicitud."
       }
     ]
   }

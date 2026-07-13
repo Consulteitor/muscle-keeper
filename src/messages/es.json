@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "title": "Muscle Keeper — protege tu masa muscular durante el tratamiento GLP-1",
+    "description": "Estima en 2 minutos tu riesgo de perder masa muscular durante un tratamiento con Ozempic, Wegovy, Mounjaro y otros GLP-1, y calcula un objetivo orientativo de proteína."
+  },
+  "nav": {
+    "brand": "Muscle Keeper"
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "Para personas que utilizan Ozempic, Wegovy, Mounjaro u otros tratamientos GLP-1",
+      "title": "Estás perdiendo peso. La pregunta es cuánto músculo estás conservando.",
+      "subtitle": "Parte del peso perdido durante un tratamiento GLP-1 puede ser masa magra, no solo grasa. Responde 12 preguntas y obtén una estimación personalizada de tu riesgo.",
+      "cta": "Calcular mi riesgo",
+      "trust": "12 preguntas · 2 minutos · Sin coste"
+    },
+    "heroPreview": {
+      "title": "Tu riesgo estimado",
+      "rows": [
+        { "label": "Masa magra estimada", "value": "— kg" },
+        { "label": "Objetivo de proteína", "value": "— g/día" },
+        { "label": "Factores principales", "value": "3 factores detectados" }
+      ]
+    },
+    "valueStrip": {
+      "items": [
+        {
+          "title": "Riesgo estimado",
+          "body": "Entiende si tus hábitos actuales pueden aumentar la pérdida de masa magra."
+        },
+        {
+          "title": "Objetivo de proteína",
+          "body": "Obtén una referencia diaria adaptada a tus respuestas."
+        },
+        {
+          "title": "Factores principales",
+          "body": "Descubre qué está influyendo más en tu resultado."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "Lo que la báscula no te cuenta",
+      "title": "El músculo que pierdes no vuelve solo",
+      "body": "Los tratamientos GLP-1 pueden producir una pérdida de peso importante. Pero el peso total no te dice cuánto has perdido de grasa y cuánto de masa magra. Sin suficiente proteína y estímulo muscular, puedes alcanzar un número más bajo en la báscula sin conservar todo el músculo que necesitas.",
+      "points": [
+        "El peso total no distingue grasa de masa magra.",
+        "Perder peso rápido puede aumentar el riesgo.",
+        "Fuerza y proteína ayudan a proteger el músculo."
+      ]
+      },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Responde",
+          "body": "12 preguntas sobre tu tratamiento, tu evolución y tus hábitos."
+        },
+        {
+          "title": "Estimamos",
+          "body": "Calculamos tu riesgo de pérdida de masa muscular y un objetivo de proteína."
+        },
+        {
+          "title": "Entiende qué hacer",
+          "body": "Recibes tu resultado y los factores que más influyen, al momento."
+        }
+      ]
+    },
+    "whatYouGet": {
+      "title": "Mucho más que un número",
+      "body": "El resultado no se limita a decirte si tu riesgo es bajo, moderado o alto.",
+      "items": [
+        "Tu nivel de riesgo estimado",
+        "Los factores que más influyen",
+        "Un objetivo orientativo de proteína",
+        "Una proyección a 6 meses si mantienes el mismo patrón"
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "2 minutos",
+      "title": "Descubre qué parte de tu pérdida de peso conviene vigilar",
+      "subtitle": "Responde 12 preguntas y obtén una estimación personal.",
+      "cta": "Calcular mi riesgo",
+      "microcopy": "Sin coste · Resultado inmediato"
+    },
+    "disclaimerNote": "No es una prueba médica ni mide directamente tu composición corporal. Es una estimación orientativa basada en tus respuestas.",
+    "secondaryCta": "Calcular mi riesgo",
+    "faq": {
+      "title": "Preguntas frecuentes sobre GLP-1 y masa muscular",
+      "items": [
+        {
+          "question": "¿Los tratamientos GLP-1 pueden hacerte perder músculo?",
+          "answer": "Parte del peso perdido durante un tratamiento GLP-1 puede proceder de la masa magra, que incluye músculo, agua y otros tejidos. La proporción varía entre personas y no puede conocerse con precisión únicamente mediante una báscula convencional."
+        },
+        {
+          "question": "¿Cómo puedo saber si estoy perdiendo masa muscular?",
+          "answer": "Una báscula normal no distingue entre grasa y masa magra. Las pruebas de composición corporal pueden ofrecer más información, mientras que factores como la velocidad de pérdida de peso, la fuerza, la actividad física y la ingesta de proteína permiten hacer una estimación orientativa del riesgo."
+        },
+        {
+          "question": "¿Cuánta proteína necesito durante un tratamiento GLP-1?",
+          "answer": "Depende de tu peso, edad, actividad, estado de salud y objetivo. Muscle Keeper ofrece una referencia orientativa, pero un dietista-nutricionista puede ajustar la cantidad a tu situación personal."
+        },
+        {
+          "question": "¿Caminar es suficiente para conservar el músculo?",
+          "answer": "Caminar es beneficioso para la salud, pero no proporciona el mismo estímulo muscular que el entrenamiento de fuerza. Para conservar músculo durante una pérdida de peso suele ser importante incluir algún tipo de trabajo de fuerza adaptado a la capacidad de cada persona."
+        },
+        {
+          "question": "¿Qué pasa si tengo náuseas o poco apetito?",
+          "answer": "Las náuseas y la falta de apetito pueden hacer más difícil comer suficiente proteína y mantener una rutina de entrenamiento. No modifiques la medicación por tu cuenta. Si los síntomas son intensos o persistentes, coméntalos con el profesional que supervisa tu tratamiento."
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "progress": "Paso {step} de {total}",
+    "back": "Atrás",
+    "next": "Continuar",
+    "exit": "Salir",
+    "selectAtLeastOne": "Selecciona todas las opciones que correspondan. Si no tienes ningún síntoma, puedes continuar.",
+    "categories": {
+      "aboutYou": "Sobre ti",
+      "treatment": "Tu tratamiento",
+      "habits": "Tus hábitos"
+    },
+    "transitions": {
+      "afterPersonal": "Ahora vamos a entender tu punto de partida.",
+      "beforeHabits": "Ya tenemos tus datos básicos. Faltan tus hábitos."
+    },
+    "calculatingSteps": [
+      "Revisando tu evolución",
+      "Comparando tus factores de riesgo",
+      "Preparando tu estimación"
+    ],
+    "fields": {
+      "sex": {
+        "question": "¿Cuál es tu sexo biológico?",
+        "options": { "female": "Mujer", "male": "Hombre" }
+      },
+      "birthYear": {
+        "question": "¿En qué año naciste?",
+        "placeholder": "Ej. 1985"
+      },
+      "heightCm": {
+        "question": "¿Cuánto mides? (cm)",
+        "placeholder": "Ej. 170"
+      },
+      "currentWeightKg": {
+        "question": "¿Cuánto pesas ahora? (kg)",
+        "placeholder": "Ej. 78"
+      },
+      "startingWeightKg": {
+        "question": "¿Cuánto pesabas cuando empezaste el tratamiento? (kg)",
+        "placeholder": "Ej. 92"
+      },
+      "targetWeightKg": {
+        "question": "¿Qué peso te gustaría alcanzar? (kg)",
+        "placeholder": "Ej. 70"
+      },
+      "medication": {
+        "question": "¿Qué tratamiento estás utilizando?",
+        "options": {
+          "semaglutide_ozempic": "Semaglutida (Ozempic)",
+          "semaglutide_wegovy": "Semaglutida (Wegovy)",
+          "semaglutide_rybelsus": "Semaglutida oral (Rybelsus)",
+          "tirzepatide_mounjaro": "Tirzepatida (Mounjaro)",
+          "tirzepatide_zepbound": "Tirzepatida (Zepbound)",
+          "liraglutide_saxenda": "Liraglutida (Saxenda)",
+          "dulaglutide_trulicity": "Dulaglutida (Trulicity)",
+          "other_unsure": "Otro / no estoy seguro"
+        }
+      },
+      "treatmentDuration": {
+        "question": "¿Cuánto tiempo llevas en tratamiento?",
+        "options": {
+          "under_4_weeks": "Menos de 4 semanas",
+          "1_3_months": "1-3 meses",
+          "3_6_months": "3-6 meses",
+          "6_12_months": "6-12 meses",
+          "over_1_year": "Más de 1 año"
+        }
+      },
+      "baselineStrengthFrequency": {
+        "question": "Antes de empezar el tratamiento, ¿cuántos días a la semana hacías entrenamiento de fuerza?",
+        "options": {
+          "none": "Ninguno",
+          "one_two": "1-2 días",
+          "three_plus": "3 días o más",
+          "unsure": "No lo recuerdo"
+        }
+      },
+      "availableDays": {
+        "question": "Si tuvieras un plan adaptado, ¿cuántos días a la semana podrías hacer entrenamiento de fuerza?",
+        "options": {
+          "0": "0 días",
+          "1-2": "1-2 días",
+          "3-4": "3-4 días",
+          "5+": "5 días o más"
+        }
+      },
+      "symptoms": {
+        "question": "¿Tienes actualmente alguno de estos síntomas?",
+        "hint": "Selecciona todos los que correspondan. Si no tienes ninguno, continúa.",
+        "options": {
+          "nausea": "Náuseas",
+          "fatigue": "Fatiga",
+          "dizziness": "Mareos",
+          "low_appetite": "Poco apetito"
+        }
+      },
+      "proteinRations": {
+        "question": "En un día normal, ¿en cuántas comidas incluyes una fuente clara de proteína?",
+        "hint": "Por ejemplo: huevos, carne, pescado, lácteos altos en proteína, tofu, legumbres o proteína en polvo.",
+        "options": {
+          "0-1": "En ninguna o en una comida",
+          "2": "En 2 comidas",
+          "3": "En 3 comidas",
+          "4+": "En 4 comidas o más"
+        }
+      }
+    },
+    "calculating": "Estimando tu nivel de riesgo…",
+    "emailGate": {
+      "title": "Desbloquea tu análisis completo",
+      "body": "Introduce tu email para desbloquear las cifras, ver qué factores están influyendo más y recibir una copia.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "consentHealth": "Acepto que Muscle Keeper procese los datos de salud que he facilitado, incluidos mi tratamiento y mis síntomas, para calcular esta estimación. Puedo retirar mi consentimiento y pedir que se borren mis datos en cualquier momento.",
+      "consentMarketing": "Quiero recibir por email mi resultado y contenido de Muscle Keeper sobre fuerza, proteína y tratamientos GLP-1. Es opcional y puedo darme de baja en cualquier momento.",
+      "submit": "Ver mi análisis completo",
+      "submitting": "Calculando…",
+      "errorEmail": "Introduce un email válido.",
+      "errorConsent": "Necesitamos tu consentimiento explícito para procesar estas respuestas y calcular el resultado.",
+      "errorGeneric": "Algo ha fallado. Inténtalo de nuevo en unos segundos."
+    },
+    "result": {
+      "title": "Tu estimación personal",
+      "riskLevel": {
+        "label": "Riesgo estimado de pérdida muscular",
+        "baix": "Riesgo estimado bajo",
+        "mitja": "Riesgo estimado moderado",
+        "alt": "Riesgo estimado alto"
+      },
+      "interpretation": {
+        "baix": "Tus respuestas muestran varios factores que ayudan a conservar la masa muscular, aunque sigue siendo importante vigilar la fuerza y la proteína.",
+        "mitja": "Tus respuestas indican varios factores que podrían aumentar la pérdida de masa magra durante el tratamiento.",
+        "alt": "Tus respuestas combinan varios factores asociados con un mayor riesgo de perder masa magra. Conviene revisarlos cuanto antes con un profesional."
+      },
+      "factorsTitle": "Qué está influyendo más en tu resultado",
+      "factors": {
+        "noCurrentTraining": "Actualmente no haces entrenamiento de fuerza.",
+        "noBaselineTraining": "Ya partías de un nivel bajo de entrenamiento de fuerza antes de empezar el tratamiento.",
+        "lowProteinMeals": "Incluyes una fuente de proteína en pocas comidas.",
+        "fastWeightLoss": "Tu velocidad de pérdida de peso es elevada, lo que está asociado a una mayor pérdida de masa magra.",
+        "longTreatment": "Llevas varios meses en tratamiento, lo que aumenta el tiempo de exposición al riesgo.",
+        "lowAppetite": "El poco apetito puede dificultar que alcances un consumo suficiente de proteína.",
+        "nauseaFatigue": "Las náuseas o la fatiga pueden dificultar mantener el entrenamiento y la alimentación.",
+        "ageRisk": "Tu edad hace más importante conservar la masa muscular durante la pérdida de peso."
+      },
+      "methodology": {
+        "title": "Cómo hemos calculado esta estimación",
+        "body": "Hemos combinado tu evolución de peso, edad, sexo, tiempo en tratamiento, actividad de fuerza, disponibilidad para entrenar y consumo aproximado de proteína. El resultado identifica patrones de riesgo, pero no mide directamente tu composición corporal."
+      },
+      "cards": {
+        "weightLost": "Peso perdido hasta ahora",
+        "estimatedLeanLost": "Pérdida estimada de masa magra",
+        "leanLossRatio": "Parte estimada de la pérdida que podría ser masa magra",
+        "proteinFloor": "Objetivo diario orientativo de proteína",
+        "proteinGap": "Diferencia diaria estimada",
+        "projected6m": "Pérdida de masa magra estimada a 6 meses si mantienes el mismo patrón",
+        "bmrDrop": "Cambio estimado del metabolismo basal"
+      },
+      "secondaryDataToggle": "Ver más datos del cálculo",
+      "units": {
+        "kg": "kg",
+        "g": "g",
+        "kcalDay": "kcal/día",
+        "pct": "%"
+      },
+      "disclaimerBox": "Este resultado es una estimación orientativa basada en tus respuestas y en patrones generales. No mide directamente tu composición corporal ni constituye un diagnóstico clínico. Coméntalo con tu médico o dietista-nutricionista antes de hacer cambios importantes.",
+      "ctaTitle": "Perder peso no debería significar renunciar a tu músculo",
+      "ctaBody": "Estamos construyendo un programa de fuerza y nutrición adaptado a personas en tratamiento con GLP-1: realista cuando te encuentras bien y también cuando tienes poco apetito, fatiga o náuseas. Te avisaremos por email cuando esté disponible.",
+      "ctaConfirm": "Resultado enviado — revisa tu email",
+      "restart": "Volver a empezar"
+    }
+  },
+  "footer": {
+    "disclaimer": "Muscle Keeper ofrece información orientativa y no sustituye el consejo de tu médico, endocrino o dietista-nutricionista. No cambies tu medicación ni tu dosis basándote en esta app.",
+    "privacyLink": "Privacidad",
+    "rights": "Muscle Keeper"
+  },
+  "privacy": {
+    "title": "Privacidad y datos de salud",
+    "updated": "Última actualización: julio de 2026",
+    "intro": "Tus respuestas sobre medicación, síntomas, peso y hábitos pueden revelar información sobre tu salud y se consideran datos de categoría especial según el artículo 9 del RGPD. Los tratamos únicamente bajo las condiciones explicadas a continuación.",
+    "sections": [
+      {
+        "title": "Identidad del responsable del tratamiento",
+        "body": "Esta sección está pendiente de completar con la razón social, el NIF y el domicilio del responsable del tratamiento antes de publicar esta app en producción."
+      },
+      {
+        "title": "Datos de contacto",
+        "body": "Para cualquier consulta sobre privacidad o para ejercer tus derechos, escribe a {contactEmail}."
+      },
+      {
+        "title": "Qué guardamos",
+        "body": "Guardamos tu email, las respuestas del cuestionario, el resultado calculado y la información técnica imprescindible para prestar el servicio. No vendemos estos datos ni los compartimos con terceros con fines publicitarios."
+      },
+      {
+        "title": "Para qué lo usamos",
+        "body": "Utilizamos estos datos para calcular y mostrar tu resultado. Solo si das un consentimiento separado, también utilizaremos tu email para enviarte contenido y novedades de Muscle Keeper. No utilizamos tus datos de salud para publicidad personalizada."
+      },
+      {
+        "title": "Base jurídica",
+        "body": "Tratamos tus datos de salud (medicación y síntomas) con tu consentimiento explícito y separado, que puedes retirar en cualquier momento. Los datos técnicos necesarios para prestar el servicio se tratan sobre la base de la ejecución de la relación contractual que se establece al usar esta herramienta."
+      },
+      {
+        "title": "Dónde se almacenan",
+        "body": "Los datos se almacenan en Supabase, con la base de datos configurada en un centro de datos de la Unión Europea. Si en el futuro incorporamos otros proveedores (por ejemplo, para el envío de emails), los añadiremos a esta lista antes de ponerlos en marcha."
+      },
+      {
+        "title": "Transferencias internacionales",
+        "body": "Actualmente no transferimos tus datos personales fuera del Espacio Económico Europeo. Si esto cambiara, actualizaríamos esta política antes de aplicarlo y, cuando sea necesario, pediríamos tu consentimiento."
+      },
+      {
+        "title": "Cuánto tiempo conservamos tus datos",
+        "body": "Los plazos de conservación concretos todavía están pendientes de definir. Hasta que se publiquen aquí, puedes pedir el borrado de tus datos en cualquier momento escribiendo a {contactEmail}."
+      },
+      {
+        "title": "Decisiones automatizadas",
+        "body": "El resultado que calculamos es una estimación informativa, no una decisión automatizada con efectos legales o significativos sobre ti. No se usa para aceptar o denegar ningún servicio, ni para tomar decisiones sobre tu tratamiento médico."
+      },
+      {
+        "title": "Tus derechos",
+        "body": "Tienes derecho a acceder a tus datos, rectificarlos, solicitar su supresión, limitar u oponerte a su tratamiento, y pedir su portabilidad. También puedes retirar tu consentimiento en cualquier momento y presentar una reclamación ante la autoridad de protección de datos de tu país (en España, la AEPD) si consideras que no hemos tratado tus datos correctamente. Puedes ejercer cualquiera de estos derechos escribiendo a {contactEmail}."
+      }
+    ]
+  }
+}

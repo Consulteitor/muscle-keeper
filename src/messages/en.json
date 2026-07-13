@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "title": "Muscle Keeper — protect your muscle during GLP-1 treatment",
+    "description": "Estimate your risk of losing muscle during treatment with Ozempic, Wegovy, Mounjaro and other GLP-1 medications, plus a suggested daily protein target."
+  },
+  "nav": {
+    "brand": "Muscle Keeper"
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "For people using Ozempic, Wegovy, Mounjaro or other GLP-1 treatments",
+      "title": "You’re losing weight. The question is how much muscle you’re preserving.",
+      "subtitle": "Some of the weight lost during GLP-1 treatment may come from lean mass, not just fat. Answer 12 questions and get a personalised risk estimate.",
+      "cta": "Calculate my risk",
+      "trust": "12 questions · 2 minutes · No cost"
+    },
+    "heroPreview": {
+      "title": "Your estimated risk",
+      "rows": [
+        { "label": "Estimated lean mass", "value": "— kg" },
+        { "label": "Protein target", "value": "— g/day" },
+        { "label": "Main factors", "value": "3 factors detected" }
+      ]
+    },
+    "valueStrip": {
+      "items": [
+        {
+          "title": "Estimated risk",
+          "body": "Understand whether your current habits may increase lean mass loss."
+        },
+        {
+          "title": "Protein target",
+          "body": "Get a daily reference tailored to your answers."
+        },
+        {
+          "title": "Main factors",
+          "body": "Discover what's having the greatest impact on your result."
+        }
+      ]
+    },
+    "problem": {
+      "eyebrow": "What the scale doesn't tell you",
+      "title": "The muscle you lose doesn't come back on its own",
+      "body": "GLP-1 treatments can produce substantial weight loss. But total weight does not tell you how much came from fat and how much from lean mass. Without enough protein and muscle stimulus, you may reach a lower number on the scale without preserving all the muscle you need.",
+      "points": [
+        "Total weight doesn't distinguish fat from lean mass.",
+        "Losing weight too fast can increase the risk.",
+        "Strength and protein help protect your muscle."
+      ]
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Answer",
+          "body": "12 questions about your treatment, progress and habits."
+        },
+        {
+          "title": "We estimate",
+          "body": "We calculate your risk of muscle loss and a protein reference."
+        },
+        {
+          "title": "Know what to do",
+          "body": "Get your result and the factors that matter most, instantly."
+        }
+      ]
+    },
+    "whatYouGet": {
+      "title": "Much more than a number",
+      "body": "The result doesn't just tell you whether your risk is low, moderate or high.",
+      "items": [
+        "Your estimated risk level",
+        "The factors that matter most",
+        "A suggested protein target",
+        "A 6-month projection if your pattern continues"
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "2 minutes",
+      "title": "Find out which part of your weight loss deserves attention",
+      "subtitle": "Answer 12 questions and get a personal estimate.",
+      "cta": "Calculate my risk",
+      "microcopy": "No cost · Instant result"
+    },
+    "disclaimerNote": "This is not a medical test and does not directly measure your body composition. It is a general estimate based on your answers.",
+    "secondaryCta": "Calculate my risk",
+    "faq": {
+      "title": "Frequently asked questions about GLP-1 and muscle mass",
+      "items": [
+        {
+          "question": "Can GLP-1 treatments cause muscle loss?",
+          "answer": "Some of the weight lost during GLP-1 treatment may come from lean mass, which includes muscle, water and other tissues. The proportion varies from person to person and cannot be measured accurately using a standard scale alone."
+        },
+        {
+          "question": "How can I tell whether I'm losing muscle mass?",
+          "answer": "A standard scale cannot distinguish fat from lean mass. Body-composition tests can provide more information, while factors such as weight-loss rate, strength, physical activity and protein intake can help estimate risk."
+        },
+        {
+          "question": "How much protein do I need during GLP-1 treatment?",
+          "answer": "It depends on your weight, age, activity, health and goal. Muscle Keeper provides a general reference, but a registered dietitian can tailor the amount to your individual situation."
+        },
+        {
+          "question": "Is walking enough to preserve muscle?",
+          "answer": "Walking is beneficial for health, but it does not provide the same muscle stimulus as strength training. Preserving muscle during weight loss usually requires some form of strength work adapted to the person's ability."
+        },
+        {
+          "question": "What if I have nausea or low appetite?",
+          "answer": "Nausea and low appetite can make it harder to eat enough protein and maintain a training routine. Do not change your medication on your own. If symptoms are severe or persistent, discuss them with the professional supervising your treatment."
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "progress": "Step {step} of {total}",
+    "back": "Back",
+    "next": "Continue",
+    "exit": "Exit",
+    "selectAtLeastOne": "Select every option that applies. If you have no symptoms, you can continue.",
+    "categories": {
+      "aboutYou": "About you",
+      "treatment": "Your treatment",
+      "habits": "Your habits"
+    },
+    "transitions": {
+      "afterPersonal": "Now let's understand your starting point.",
+      "beforeHabits": "We have your basic details. Now your habits."
+    },
+    "calculatingSteps": [
+      "Reviewing your progress",
+      "Comparing your risk factors",
+      "Preparing your estimate"
+    ],
+    "fields": {
+      "sex": {
+        "question": "What is your biological sex?",
+        "options": { "female": "Female", "male": "Male" }
+      },
+      "birthYear": {
+        "question": "What year were you born?",
+        "placeholder": "E.g. 1985"
+      },
+      "heightCm": {
+        "question": "How tall are you? (cm)",
+        "placeholder": "E.g. 170"
+      },
+      "currentWeightKg": {
+        "question": "What's your current weight? (kg)",
+        "placeholder": "E.g. 78"
+      },
+      "startingWeightKg": {
+        "question": "What did you weigh when you started treatment? (kg)",
+        "placeholder": "E.g. 92"
+      },
+      "targetWeightKg": {
+        "question": "What weight would you like to reach? (kg)",
+        "placeholder": "E.g. 70"
+      },
+      "medication": {
+        "question": "Which treatment are you using?",
+        "options": {
+          "semaglutide_ozempic": "Semaglutide (Ozempic)",
+          "semaglutide_wegovy": "Semaglutide (Wegovy)",
+          "semaglutide_rybelsus": "Oral semaglutide (Rybelsus)",
+          "tirzepatide_mounjaro": "Tirzepatide (Mounjaro)",
+          "tirzepatide_zepbound": "Tirzepatide (Zepbound)",
+          "liraglutide_saxenda": "Liraglutide (Saxenda)",
+          "dulaglutide_trulicity": "Dulaglutide (Trulicity)",
+          "other_unsure": "Other / not sure"
+        }
+      },
+      "treatmentDuration": {
+        "question": "How long have you been on treatment?",
+        "options": {
+          "under_4_weeks": "Under 4 weeks",
+          "1_3_months": "1-3 months",
+          "3_6_months": "3-6 months",
+          "6_12_months": "6-12 months",
+          "over_1_year": "Over 1 year"
+        }
+      },
+      "baselineStrengthFrequency": {
+        "question": "Before starting treatment, how many days a week did you do strength training?",
+        "options": {
+          "none": "None",
+          "one_two": "1-2 days",
+          "three_plus": "3 days or more",
+          "unsure": "I don't remember"
+        }
+      },
+      "availableDays": {
+        "question": "With an adapted plan, how many days a week could you do strength training?",
+        "options": {
+          "0": "0 days",
+          "1-2": "1-2 days",
+          "3-4": "3-4 days",
+          "5+": "5 days or more"
+        }
+      },
+      "symptoms": {
+        "question": "Are you currently experiencing any of these symptoms?",
+        "hint": "Select all that apply. If you have none, continue.",
+        "options": {
+          "nausea": "Nausea",
+          "fatigue": "Fatigue",
+          "dizziness": "Dizziness",
+          "low_appetite": "Low appetite"
+        }
+      },
+      "proteinRations": {
+        "question": "On a typical day, how many meals include a clear source of protein?",
+        "hint": "For example: eggs, meat, fish, high-protein dairy, tofu, legumes or protein powder.",
+        "options": {
+          "0-1": "In none or one meal",
+          "2": "In 2 meals",
+          "3": "In 3 meals",
+          "4+": "In 4 meals or more"
+        }
+      }
+    },
+    "calculating": "Estimating your risk level…",
+    "emailGate": {
+      "title": "Unlock your full analysis",
+      "body": "Enter your email to unlock the figures, see which factors are having the greatest impact and receive a copy.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "consentHealth": "I consent to Muscle Keeper processing the health data I provided, including my treatment and symptoms, to calculate this estimate. I can withdraw my consent and request deletion of my data at any time.",
+      "consentMarketing": "I want to receive my result and Muscle Keeper content about strength, protein and GLP-1 treatment by email. This is optional, and I can unsubscribe at any time.",
+      "submit": "See my full analysis",
+      "submitting": "Calculating…",
+      "errorEmail": "Enter a valid email.",
+      "errorConsent": "We need your explicit consent to process these answers and calculate the result.",
+      "errorGeneric": "Something went wrong. Try again in a few seconds."
+    },
+    "result": {
+      "title": "Your personal estimate",
+      "riskLevel": {
+        "label": "Estimated risk of muscle loss",
+        "baix": "Low estimated risk",
+        "mitja": "Moderate estimated risk",
+        "alt": "High estimated risk"
+      },
+      "interpretation": {
+        "baix": "Your answers show several factors that support muscle preservation, although strength and protein still deserve attention.",
+        "mitja": "Your answers indicate several factors that may increase lean mass loss during treatment.",
+        "alt": "Your answers combine several factors associated with a higher risk of lean mass loss. It is worth reviewing them with a professional soon."
+      },
+      "factorsTitle": "What is having the greatest impact on your result",
+      "factors": {
+        "noCurrentTraining": "You are not currently doing strength training.",
+        "noBaselineTraining": "You already had a low level of strength training before starting treatment.",
+        "lowProteinMeals": "You include a clear protein source in relatively few meals.",
+        "fastWeightLoss": "Your current rate of weight loss is high, which is associated with greater lean mass loss.",
+        "longTreatment": "You've been on treatment for several months, which increases your time of exposure to the risk.",
+        "lowAppetite": "Low appetite may make it harder to get enough protein.",
+        "nauseaFatigue": "Nausea or fatigue can make it harder to keep up training and eating well.",
+        "ageRisk": "Your age makes preserving muscle during weight loss especially important."
+      },
+      "methodology": {
+        "title": "How we calculated this estimate",
+        "body": "We combined your weight change, age, sex, time on treatment, strength activity, training availability and approximate protein intake. The result identifies risk patterns but does not directly measure your body composition."
+      },
+      "cards": {
+        "weightLost": "Weight lost so far",
+        "estimatedLeanLost": "Estimated lean mass loss",
+        "leanLossRatio": "Estimated share of weight loss that may be lean mass",
+        "proteinFloor": "Suggested daily protein target",
+        "proteinGap": "Estimated daily gap",
+        "projected6m": "Estimated lean mass loss at 6 months if your current pattern continues",
+        "bmrDrop": "Estimated change in resting metabolism"
+      },
+      "secondaryDataToggle": "See more calculation details",
+      "units": {
+        "kg": "kg",
+        "g": "g",
+        "kcalDay": "kcal/day",
+        "pct": "%"
+      },
+      "disclaimerBox": "This result is a general estimate based on your answers and broad population patterns. It does not directly measure your body composition or constitute a clinical diagnosis. Discuss it with your doctor or registered dietitian before making significant changes.",
+      "ctaTitle": "Losing weight should not mean giving up your muscle",
+      "ctaBody": "We're building a strength and nutrition programme for people using GLP-1 treatments: realistic when you feel well and when you are dealing with low appetite, fatigue or nausea. We'll email you when it becomes available.",
+      "ctaConfirm": "Result sent — check your email",
+      "restart": "Start over"
+    }
+  },
+  "footer": {
+    "disclaimer": "Muscle Keeper provides general information and does not replace advice from your doctor, endocrinologist or registered dietitian. Do not change your medication or dose based on this app.",
+    "privacyLink": "Privacy",
+    "rights": "Muscle Keeper"
+  },
+  "privacy": {
+    "title": "Privacy and health data",
+    "updated": "Last updated: July 2026",
+    "intro": "Your answers about medication, symptoms, weight and habits may reveal information about your health and are considered special-category data under Article 9 of the GDPR. We process them only under the conditions explained below.",
+    "sections": [
+      {
+        "title": "Data controller identity",
+        "body": "This section is pending completion with the legal name, tax ID and registered address of the data controller before this app goes into production."
+      },
+      {
+        "title": "Contact details",
+        "body": "For any privacy question or to exercise your rights, write to {contactEmail}."
+      },
+      {
+        "title": "What we store",
+        "body": "We store your email, quiz answers, calculated result and the technical information required to provide the service. We do not sell this data or share it with third parties for advertising purposes."
+      },
+      {
+        "title": "What we use it for",
+        "body": "We use this data to calculate and display your result. Only when you provide separate consent will we also use your email to send Muscle Keeper content and updates. We do not use your health data for personalised advertising."
+      },
+      {
+        "title": "Legal basis",
+        "body": "We process your health data (medication and symptoms) based on your explicit, separate consent, which you can withdraw at any time. The technical data needed to provide the service is processed on the basis of performing the contractual relationship established when you use this tool."
+      },
+      {
+        "title": "Where your data is stored",
+        "body": "Data is stored in Supabase, with the database configured in a European Union data centre. If we add other providers in the future (for example, for sending emails), we will add them to this list before switching them on."
+      },
+      {
+        "title": "International transfers",
+        "body": "We do not currently transfer your personal data outside the European Economic Area. If this were to change, we would update this policy before doing so and, where required, ask for your consent."
+      },
+      {
+        "title": "How long we keep your data",
+        "body": "Specific retention periods are still pending definition. Until they are published here, you can request deletion of your data at any time by writing to {contactEmail}."
+      },
+      {
+        "title": "Automated decisions",
+        "body": "The result we calculate is an informational estimate, not an automated decision with legal or similarly significant effects on you. It is not used to accept or deny any service, or to make decisions about your medical treatment."
+      },
+      {
+        "title": "Your rights",
+        "body": "You have the right to access your data, rectify it, request its erasure, restrict or object to its processing, and request portability. You can also withdraw your consent at any time and file a complaint with your country's data protection authority (in Spain, the AEPD) if you believe we have not handled your data correctly. You can exercise any of these rights by writing to {contactEmail}."
+      }
+    ]
+  }
+}

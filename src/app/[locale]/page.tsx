@@ -1,6 +1,12 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
+function splitHeroTitle(title: string): [string, string] {
+  const idx = title.indexOf(". ");
+  if (idx === -1) return [title, ""];
+  return [title.slice(0, idx + 1), title.slice(idx + 2)];
+}
+
 export default async function LandingPage({
   params,
 }: {
@@ -9,9 +15,15 @@ export default async function LandingPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("landing");
+  const tResult = await getTranslations("quiz.result");
 
   const steps = t.raw("howItWorks.steps") as string[];
   const faqItems = t.raw("faq.items") as { question: string; answer: string }[];
+  const previewRows = t.raw("heroPreview.rows") as {
+    label: string;
+    value: string;
+  }[];
+  const [titleLead, titleRest] = splitHeroTitle(t("hero.title"));
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -28,25 +40,57 @@ export default async function LandingPage({
 
   return (
     <main className="flex flex-1 flex-col">
-      <section className="mx-auto flex max-w-3xl flex-1 flex-col justify-center px-6 py-24 text-center">
-        <p className="text-sm font-medium uppercase tracking-wide text-accent">
-          {t("hero.eyebrow")}
-        </p>
-        <h1 className="mt-4 text-4xl font-semibold leading-tight text-balance sm:text-5xl">
-          {t("hero.title")}
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground text-balance">
-          {t("hero.subtitle")}
-        </p>
-        <div className="mt-10 flex justify-center">
-          <Link
-            href="/quiz"
-            className="rounded-md bg-accent px-8 py-3 text-base font-medium text-accent-foreground transition-opacity hover:opacity-90"
-          >
-            {t("hero.cta")}
-          </Link>
+      <section className="border-b border-border">
+        <div className="mx-auto grid max-w-6xl gap-16 px-6 pt-20 lg:grid-cols-2 lg:items-center lg:pt-28">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-wide text-accent">
+              {t("hero.eyebrow")}
+            </p>
+            <h1 className="mt-4 max-w-2xl text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
+              <span>{titleLead}</span>{" "}
+              <span className="text-muted-foreground">{titleRest}</span>
+            </h1>
+            <p className="mt-6 max-w-md text-lg text-muted-foreground">
+              {t("hero.subtitle")}
+            </p>
+            <div className="mt-8">
+              <Link
+                href="/quiz"
+                className="inline-flex items-center gap-2 rounded-md bg-accent px-8 py-3.5 text-base font-medium text-accent-foreground transition-colors hover:bg-accent-hover active:bg-accent-pressed"
+              >
+                {t("hero.cta")}
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+            <p className="mt-3 text-sm text-muted-foreground-2">
+              {t("hero.trust")}
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-border-strong bg-surface-elevated p-6 shadow-lg shadow-black/20">
+            <p className="text-sm text-muted-foreground">
+              {t("heroPreview.title")}
+            </p>
+            <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-risk-mitja/40 bg-risk-mitja/15 px-4 py-1.5 text-sm font-medium text-risk-mitja">
+              {tResult("riskLevel.mitja")}
+            </div>
+            <dl className="mt-6 flex flex-col">
+              {previewRows.map((row, i) => (
+                <div
+                  key={row.label}
+                  className={`flex items-center justify-between py-4 ${i > 0 ? "border-t border-border" : ""}`}
+                >
+                  <dt className="text-sm text-muted-foreground">
+                    {row.label}
+                  </dt>
+                  <dd className="text-base font-semibold">{row.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
-        <p className="mt-4 text-xs text-muted-foreground">
+
+        <p className="mx-auto max-w-6xl px-6 pt-10 pb-16 text-xs text-muted-foreground-2 lg:pt-12 lg:pb-20">
           {t("disclaimerNote")}
         </p>
       </section>

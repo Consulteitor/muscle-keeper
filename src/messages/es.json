@@ -11,7 +11,16 @@
       "eyebrow": "Para personas que utilizan Ozempic, Wegovy, Mounjaro u otros tratamientos GLP-1",
       "title": "Estás perdiendo peso. La pregunta es cuánto músculo estás conservando.",
       "subtitle": "Parte del peso perdido durante un tratamiento GLP-1 puede ser masa magra, no solo grasa. Responde 12 preguntas y obtén una estimación personalizada de tu riesgo.",
-      "cta": "Calcular mi riesgo — 2 minutos"
+      "cta": "Calcular mi riesgo",
+      "trust": "12 preguntas · 2 minutos · Sin coste"
+    },
+    "heroPreview": {
+      "title": "Tu riesgo estimado",
+      "rows": [
+        { "label": "Masa magra estimada", "value": "— kg" },
+        { "label": "Objetivo de proteína", "value": "— g/día" },
+        { "label": "Factores principales", "value": "3 factores detectados" }
+      ]
     },
     "problem": {
       "title": "El músculo que pierdes no vuelve solo",

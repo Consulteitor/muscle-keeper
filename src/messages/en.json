@@ -11,7 +11,16 @@
       "eyebrow": "For people using Ozempic, Wegovy, Mounjaro or other GLP-1 treatments",
       "title": "You’re losing weight. The question is how much muscle you’re preserving.",
       "subtitle": "Some of the weight lost during GLP-1 treatment may come from lean mass, not just fat. Answer 12 questions and get a personalised risk estimate.",
-      "cta": "Calculate my risk — 2 minutes"
+      "cta": "Calculate my risk",
+      "trust": "12 questions · 2 minutes · No cost"
+    },
+    "heroPreview": {
+      "title": "Your estimated risk",
+      "rows": [
+        { "label": "Estimated lean mass", "value": "— kg" },
+        { "label": "Protein target", "value": "— g/day" },
+        { "label": "Main factors", "value": "3 factors detected" }
+      ]
     },
     "problem": {
       "title": "The muscle you lose doesn't come back on its own",

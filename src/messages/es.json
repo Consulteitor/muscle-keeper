@@ -20,7 +20,9 @@
         { "label": "Masa magra estimada", "value": "— kg" },
         { "label": "Objetivo de proteína", "value": "— g/día" },
         { "label": "Factores principales", "value": "3 factores detectados" }
-      ]
+      ],
+      "factorsUnit": "factores detectados",
+      "factorsUnitSingular": "factor detectado"
     },
     "valueStrip": {
       "items": [

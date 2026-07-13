@@ -20,7 +20,9 @@
         { "label": "Massa magra estimada", "value": "— kg" },
         { "label": "Objectiu de proteïna", "value": "— g/dia" },
         { "label": "Factors principals", "value": "3 factors detectats" }
-      ]
+      ],
+      "factorsUnit": "factors detectats",
+      "factorsUnitSingular": "factor detectat"
     },
     "valueStrip": {
       "items": [

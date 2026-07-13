@@ -20,7 +20,9 @@
         { "label": "Estimated lean mass", "value": "— kg" },
         { "label": "Protein target", "value": "— g/day" },
         { "label": "Main factors", "value": "3 factors detected" }
-      ]
+      ],
+      "factorsUnit": "factors detected",
+      "factorsUnitSingular": "factor detected"
     },
     "valueStrip": {
       "items": [

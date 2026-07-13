@@ -1,9 +1,16 @@
+"use client";
+
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "./locale-switcher";
 
 export function Header() {
   const t = useTranslations();
+  const pathname = usePathname();
+
+  if (pathname.startsWith("/quiz")) {
+    return null;
+  }
 
   return (
     <header className="sticky top-0 z-10 border-b border-border bg-background/80 backdrop-blur">

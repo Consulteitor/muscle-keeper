@@ -66,7 +66,22 @@
     "progress": "Step {step} of {total}",
     "back": "Back",
     "next": "Continue",
+    "exit": "Exit",
     "selectAtLeastOne": "Select every option that applies. If you have no symptoms, you can continue.",
+    "categories": {
+      "aboutYou": "About you",
+      "treatment": "Your treatment",
+      "habits": "Your habits"
+    },
+    "transitions": {
+      "afterPersonal": "Now let's understand your starting point.",
+      "beforeHabits": "We have your basic details. Now your habits."
+    },
+    "calculatingSteps": [
+      "Reviewing your progress",
+      "Comparing your risk factors",
+      "Preparing your estimate"
+    ],
     "fields": {
       "sex": {
         "question": "What is your biological sex?",

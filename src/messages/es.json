@@ -66,7 +66,22 @@
     "progress": "Paso {step} de {total}",
     "back": "Atrás",
     "next": "Continuar",
+    "exit": "Salir",
     "selectAtLeastOne": "Selecciona todas las opciones que correspondan. Si no tienes ningún síntoma, puedes continuar.",
+    "categories": {
+      "aboutYou": "Sobre ti",
+      "treatment": "Tu tratamiento",
+      "habits": "Tus hábitos"
+    },
+    "transitions": {
+      "afterPersonal": "Ahora vamos a entender tu punto de partida.",
+      "beforeHabits": "Ya tenemos tus datos básicos. Faltan tus hábitos."
+    },
+    "calculatingSteps": [
+      "Revisando tu evolución",
+      "Comparando tus factores de riesgo",
+      "Preparando tu estimación"
+    ],
     "fields": {
       "sex": {
         "question": "¿Cuál es tu sexo biológico?",

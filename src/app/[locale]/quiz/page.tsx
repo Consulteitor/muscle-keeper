@@ -10,7 +10,7 @@ export default async function QuizPage({
   setRequestLocale(locale);
 
   return (
-    <main className="mx-auto flex w-full max-w-xl flex-1 flex-col px-6 py-16">
+    <main className="flex flex-1 flex-col">
       <QuizWizard locale={locale} />
     </main>
   );

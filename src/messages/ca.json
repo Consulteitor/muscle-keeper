@@ -66,7 +66,22 @@
     "progress": "Pas {step} de {total}",
     "back": "Enrere",
     "next": "Continua",
+    "exit": "Sortir",
     "selectAtLeastOne": "Selecciona totes les opcions que corresponguin. Si no tens cap símptoma, pots continuar.",
+    "categories": {
+      "aboutYou": "Sobre tu",
+      "treatment": "El teu tractament",
+      "habits": "Els teus hàbits"
+    },
+    "transitions": {
+      "afterPersonal": "Ara entendrem el teu punt de partida.",
+      "beforeHabits": "Ja tenim les teves dades bàsiques. Falten els teus hàbits."
+    },
+    "calculatingSteps": [
+      "Revisant la teva evolució",
+      "Comparant els teus factors de risc",
+      "Preparant la teva estimació"
+    ],
     "fields": {
       "sex": {
         "question": "Quin és el teu sexe biològic?",

@@ -1,17 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { STEPS } from "./steps";
+import { useRouter } from "@/i18n/navigation";
+import { STEPS, TRANSITION_AFTER_INDEX } from "./steps";
 import { QuizStep } from "./quiz-step";
 import { EmailGate } from "./email-gate";
 import { QuizResult } from "./quiz-result";
+import { WizardHeader } from "./wizard-header";
+import { WizardCard } from "./wizard-card";
 import { computeDiagnostic, type QuizAnswers, type DiagnosticResult } from "@/lib/diagnostic";
 import { getSupabaseClient } from "@/lib/supabase/client";
 
 type RawAnswers = Record<string, string | string[] | undefined>;
-type Phase = "form" | "calculating" | "gate" | "result";
+type Phase = "form" | "transition" | "calculating" | "gate" | "result";
 
 function toQuizAnswers(raw: RawAnswers): QuizAnswers {
   return {
@@ -43,30 +45,73 @@ function isStepValid(kind: string, value: string | string[] | undefined, min?: n
   return typeof value === "string" && value.length > 0;
 }
 
+function CalculatingSequence() {
+  const t = useTranslations("quiz");
+  const messages = t.raw("calculatingSteps") as string[];
+  const [i, setI] = useState(0);
+
+  useEffect(() => {
+    if (i >= messages.length - 1) return;
+    const id = window.setTimeout(() => setI((prev) => prev + 1), 800);
+    return () => window.clearTimeout(id);
+  }, [i, messages.length]);
+
+  return (
+    <div
+      className="flex flex-1 flex-col items-center justify-center gap-4 py-24 text-center"
+      aria-live="polite"
+    >
+      <div className="h-8 w-8 animate-spin rounded-full border-2 border-border border-t-accent" />
+      <p className="text-muted-foreground">{messages[i]}</p>
+    </div>
+  );
+}
+
 export function QuizWizard({ locale }: { locale: string }) {
   const t = useTranslations("quiz");
+  const router = useRouter();
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<RawAnswers>({});
   const [phase, setPhase] = useState<Phase>("form");
+  const [transitionKey, setTransitionKey] = useState<"afterPersonal" | "beforeHabits" | null>(
+    null,
+  );
   const [result, setResult] = useState<DiagnosticResult | null>(null);
 
   const step = STEPS[index];
   const value = answers[step?.field];
   const valid = step ? isStepValid(step.kind, value, step.min, step.max) : false;
 
+  function advanceToStep(nextIndex: number) {
+    setIndex(nextIndex);
+    setPhase("form");
+  }
+
   function handleNext() {
     if (index < STEPS.length - 1) {
-      setIndex(index + 1);
+      const nextIndex = index + 1;
+      const transition = TRANSITION_AFTER_INDEX[index];
+      if (transition) {
+        setTransitionKey(transition);
+        setPhase("transition");
+        window.setTimeout(() => advanceToStep(nextIndex), 1400);
+      } else {
+        advanceToStep(nextIndex);
+      }
       return;
     }
     const diagnostic = computeDiagnostic(toQuizAnswers(answers));
     setResult(diagnostic);
     setPhase("calculating");
-    window.setTimeout(() => setPhase("gate"), 1100);
+    window.setTimeout(() => setPhase("gate"), 2400);
   }
 
   function handleBack() {
-    if (index > 0) setIndex(index - 1);
+    if (index > 0) {
+      setIndex(index - 1);
+      return;
+    }
+    router.push("/");
   }
 
   async function handleGateSubmit(input: {
@@ -87,67 +132,62 @@ export function QuizWizard({ locale }: { locale: string }) {
     setPhase("result");
   }
 
-  if (phase === "calculating") {
+  if (phase === "transition" && transitionKey) {
     return (
-      <div className="flex flex-1 flex-col items-center justify-center gap-4 py-24 text-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-border border-t-accent" />
-        <p className="text-muted-foreground">{t("calculating")}</p>
+      <div className="flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
+        <p className="max-w-sm text-xl font-medium text-balance">
+          {t(`transitions.${transitionKey}`)}
+        </p>
       </div>
     );
   }
 
+  if (phase === "calculating") {
+    return <CalculatingSequence />;
+  }
+
   if (phase === "gate" && result) {
-    return <EmailGate result={result} onSubmit={handleGateSubmit} />;
+    return (
+      <div className="mx-auto w-full max-w-[720px] flex-1 px-6 py-12">
+        <EmailGate result={result} onSubmit={handleGateSubmit} />
+      </div>
+    );
   }
 
   if (phase === "result" && result) {
-    return <QuizResult result={result} />;
+    return (
+      <div className="mx-auto w-full max-w-[720px] flex-1 px-6 py-12">
+        <QuizResult result={result} />
+      </div>
+    );
   }
 
   return (
     <div className="flex flex-1 flex-col">
-      <div className="mb-8">
-        <p className="text-sm text-muted-foreground">
-          {t("progress", { step: index + 1, total: STEPS.length })}
-        </p>
-        <div className="mt-2 h-1 w-full rounded-full bg-surface-2">
-          <div
-            className="h-1 rounded-full bg-accent transition-all"
-            style={{ width: `${((index + 1) / STEPS.length) * 100}%` }}
+      <WizardHeader
+        step={index + 1}
+        total={STEPS.length}
+        category={t(`categories.${step.category}`)}
+        onBack={handleBack}
+      />
+      <div className="mx-auto flex w-full max-w-[720px] flex-1 flex-col justify-start px-6 py-8 lg:justify-center lg:py-10">
+        <WizardCard>
+          <QuizStep
+            step={step}
+            value={value}
+            onChange={(v) => setAnswers((prev) => ({ ...prev, [step.field]: v }))}
           />
-        </div>
-      </div>
-
-      <div className="flex-1">
-        <QuizStep
-          step={step}
-          value={value}
-          onChange={(v) => setAnswers((prev) => ({ ...prev, [step.field]: v }))}
-        />
-      </div>
-
-      <div className="mt-10 flex items-center justify-between">
-        {index === 0 ? (
-          <Link href="/" className="text-sm text-muted-foreground hover:text-foreground">
-            {t("back")}
-          </Link>
-        ) : (
-          <button
-            type="button"
-            onClick={handleBack}
-            className="text-sm text-muted-foreground hover:text-foreground"
-          >
-            {t("back")}
-          </button>
-        )}
-        <button
-          type="button"
-          disabled={!valid}
-          onClick={handleNext}
-          className="rounded-md bg-accent px-6 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-40"
-        >
-          {t("next")}
-        </button>
+          <div className="mt-8 flex justify-end border-t border-border pt-6">
+            <button
+              type="button"
+              disabled={!valid}
+              onClick={handleNext}
+              className="rounded-md bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover disabled:bg-surface-2 disabled:text-muted-foreground-2"
+            >
+              {t("next")}
+            </button>
+          </div>
+        </WizardCard>
       </div>
     </div>
   );

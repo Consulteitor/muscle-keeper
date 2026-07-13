@@ -1,10 +1,22 @@
+"use client";
+
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "./locale-switcher";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const pathname = usePathname();
   const year = new Date().getFullYear();
+  const isWizard = pathname.startsWith("/quiz");
+
+  if (isWizard) {
+    return (
+      <footer className="border-t border-border px-6 py-4 text-center text-xs text-muted-foreground-2">
+        <p>{t("disclaimer")}</p>
+      </footer>
+    );
+  }
 
   return (
     <footer className="border-t border-border bg-surface">

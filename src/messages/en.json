@@ -22,7 +22,12 @@
         { "label": "Main factors", "value": "3 factors detected" }
       ],
       "factorsUnit": "factors detected",
-      "factorsUnitSingular": "factor detected"
+      "factorsUnitSingular": "factor detected",
+      "gaugeLabels": {
+        "baix": "Low",
+        "mitja": "Moderate",
+        "alt": "High"
+      }
     },
     "valueStrip": {
       "items": [

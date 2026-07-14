@@ -94,15 +94,21 @@ export default async function LandingPage({
       </section>
 
       <section className="border-b border-border bg-surface">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:grid-cols-3">
-          {valueItems.map((item, i) => (
-            <Reveal key={item.title} delay={i * 80}>
-              <h2 className="font-serif text-lg font-medium">{item.title}</h2>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                {item.body}
-              </p>
-            </Reveal>
-          ))}
+        <div className="mx-auto max-w-6xl px-6 py-14">
+          <Reveal>
+            <h2 className="font-serif text-2xl font-medium">{t("valueStrip.title")}</h2>
+            <p className="mt-2 text-muted-foreground">{t("valueStrip.subtitle")}</p>
+          </Reveal>
+          <div className="mt-8 grid gap-10 sm:grid-cols-3">
+            {valueItems.map((item, i) => (
+              <Reveal key={item.title} delay={i * 80}>
+                <h3 className="font-serif text-lg font-medium">{item.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  {item.body}
+                </p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

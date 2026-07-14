@@ -28,6 +28,8 @@
       }
     },
     "valueStrip": {
+      "title": "El primer pas és calcular el teu risc",
+      "subtitle": "Això és el que obtens en 2 minuts:",
       "items": [
         {
           "title": "Risc estimat",

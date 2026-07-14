@@ -28,6 +28,8 @@
       }
     },
     "valueStrip": {
+      "title": "El primer paso es calcular tu riesgo",
+      "subtitle": "Esto es lo que obtienes en 2 minutos:",
       "items": [
         {
           "title": "Riesgo estimado",

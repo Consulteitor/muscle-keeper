@@ -71,7 +71,7 @@ export function EmailGate({
         {TEASER_CARD_KEYS.map((key) => (
           <div
             key={key}
-            className="rounded-md border border-border bg-surface p-4"
+            className="rounded-xl border border-border bg-surface p-4"
           >
             <dt className="text-sm text-muted-foreground">
               {tResult(`cards.${key}`)}
@@ -102,7 +102,7 @@ export function EmailGate({
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t("emailPlaceholder")}
             autoFocus
-            className="mt-2 w-full rounded-md border border-border bg-surface px-4 py-3 text-lg outline-none focus:border-accent"
+            className="mt-2 w-full rounded-xl border border-border bg-surface px-4 py-3 text-lg outline-none focus:border-accent"
           />
         </div>
 

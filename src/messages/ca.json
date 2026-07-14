@@ -8,21 +8,28 @@
   },
   "landing": {
     "hero": {
-      "eyebrow": "Per a persones que utilitzen Ozempic, Wegovy, Mounjaro o altres tractaments GLP-1",
+      "eyebrow": "Estàs en tractament amb Ozempic, Wegovy, Mounjaro o un altre GLP-1?",
       "title": "Estàs perdent pes. La pregunta és quant múscul estàs conservant.",
       "subtitle": "Part del pes perdut durant un tractament GLP-1 pot ser massa magra, no només greix. Respon 12 preguntes i obtén una estimació personalitzada del teu risc.",
       "cta": "Calcular el meu risc",
       "trust": "12 preguntes · 2 minuts · Sense cost"
     },
     "heroPreview": {
-      "title": "El teu risc estimat",
-      "rows": [
-        { "label": "Massa magra estimada", "value": "— kg" },
-        { "label": "Objectiu de proteïna", "value": "— g/dia" },
-        { "label": "Factors principals", "value": "3 factors detectats" }
-      ]
+      "previewLabel": "Exemple de resultat",
+      "title": "Risc estimat de perdre massa muscular",
+      "factorsLabel": "Factors principals",
+      "factorsUnit": "factors detectats",
+      "factorsUnitSingular": "factor detectat",
+      "includesNote": "+ el teu objectiu de proteïna i la massa magra estimada, calculats a partir de les teves respostes",
+      "gaugeLabels": {
+        "baix": "Baix",
+        "mitja": "Moderat",
+        "alt": "Alt"
+      }
     },
     "valueStrip": {
+      "title": "El primer pas és calcular el teu risc",
+      "subtitle": "Això és el que obtens en 2 minuts:",
       "items": [
         {
           "title": "Risc estimat",

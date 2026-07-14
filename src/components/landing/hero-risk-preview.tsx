@@ -1,0 +1,110 @@
+"use client";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import type { RiskLevel } from "@/lib/diagnostic";
+
+const LEVELS: RiskLevel[] = ["baix", "mitja", "alt"];
+
+const FACTOR_COUNTS: Record<RiskLevel, number> = {
+  baix: 1,
+  mitja: 3,
+  alt: 5,
+};
+
+const GAUGE_SHARE: Record<RiskLevel, number> = {
+  baix: 1 / 3,
+  mitja: 2 / 3,
+  alt: 1,
+};
+
+const GAUGE_COLOR_VAR: Record<RiskLevel, string> = {
+  baix: "var(--risk-baix)",
+  mitja: "var(--risk-mitja)",
+  alt: "var(--risk-alt)",
+};
+
+const CHIP_ACTIVE_CLASSES: Record<RiskLevel, string> = {
+  baix: "border-risk-baix/40 bg-risk-baix/15 text-risk-baix",
+  mitja: "border-risk-mitja/40 bg-risk-mitja/15 text-risk-mitja",
+  alt: "border-risk-alt/40 bg-risk-alt/15 text-risk-alt",
+};
+
+export function HeroRiskPreview({
+  previewLabel,
+  title,
+  factorsLabel,
+  factorsUnit,
+  factorsUnitSingular,
+  includesNote,
+}: {
+  previewLabel: string;
+  title: string;
+  factorsLabel: string;
+  factorsUnit: string;
+  factorsUnitSingular: string;
+  includesNote: string;
+}) {
+  const tResult = useTranslations("quiz.result");
+  const tGauge = useTranslations("landing.heroPreview.gaugeLabels");
+  const [level, setLevel] = useState<RiskLevel>("mitja");
+  const count = FACTOR_COUNTS[level];
+  const share = GAUGE_SHARE[level];
+  const color = GAUGE_COLOR_VAR[level];
+
+  return (
+    <div className="relative">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -rotate-3 rounded-3xl bg-lime/60"
+      />
+      <div className="relative rounded-3xl border border-border-strong bg-surface-elevated p-6 shadow-lg shadow-black/[0.08]">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground-2">
+              {previewLabel}
+            </p>
+            <p className="mt-1 text-base font-semibold leading-snug">{title}</p>
+          </div>
+          <div
+            className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-full transition-[background] duration-300"
+            style={{
+              background: `conic-gradient(${color} ${share * 360}deg, color-mix(in srgb, ${color} 12%, transparent) 0deg)`,
+            }}
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-elevated text-center text-[10px] font-semibold leading-tight text-foreground">
+              {tGauge(level)}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {LEVELS.map((l) => (
+            <button
+              key={l}
+              type="button"
+              onClick={() => setLevel(l)}
+              aria-pressed={level === l}
+              className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
+                level === l
+                  ? CHIP_ACTIVE_CLASSES[l]
+                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground"
+              }`}
+            >
+              {tResult(`riskLevel.${l}`)}
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+          <span className="text-sm text-muted-foreground">{factorsLabel}</span>
+          <span className="text-base font-semibold text-accent transition-all duration-200">
+            {count} {count === 1 ? factorsUnitSingular : factorsUnit}
+          </span>
+        </div>
+
+        <p className="mt-4 text-xs text-muted-foreground-2">{includesNote}</p>
+      </div>
+    </div>
+  );
+}

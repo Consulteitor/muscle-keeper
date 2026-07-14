@@ -45,7 +45,7 @@ export function WizardHeader({
           />
         </div>
         {category && (
-          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-muted-foreground-2">
+          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-accent">
             {category}
           </p>
         )}

@@ -67,7 +67,7 @@ export function QuizStep({
           placeholder={placeholder}
           onChange={(e) => onChange(e.target.value)}
           autoFocus
-          className="mt-6 w-full rounded-md border border-border-strong bg-surface px-4 py-3 text-lg outline-none focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent/30"
+          className="mt-6 w-full rounded-xl border border-border-strong bg-surface px-4 py-3 text-lg outline-none focus-visible:border-accent focus-visible:ring-2 focus-visible:ring-accent/30"
         />
       </div>
     );

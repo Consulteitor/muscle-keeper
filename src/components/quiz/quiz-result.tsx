@@ -55,13 +55,18 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
       {result.topFactors.length > 0 && (
         <div>
           <h3 className="text-lg font-semibold">{t("factorsTitle")}</h3>
-          <ul className="mt-3 flex flex-col gap-2">
-            {result.topFactors.map((factor) => (
+          <ul className="mt-3 flex flex-col rounded-2xl border border-border bg-surface px-4">
+            {result.topFactors.map((factor, i) => (
               <li
                 key={factor}
-                className="flex gap-2 text-sm text-muted-foreground leading-relaxed"
+                className={`flex items-start gap-3 py-3.5 text-sm text-foreground leading-relaxed ${i > 0 ? "border-t border-border" : ""}`}
               >
-                <span aria-hidden="true">—</span>
+                <span
+                  aria-hidden="true"
+                  className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-lime text-[11px] font-bold text-lime-foreground"
+                >
+                  ✓
+                </span>
                 <span>{t(`factors.${factor}`)}</span>
               </li>
             ))}
@@ -69,7 +74,7 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
         </div>
       )}
 
-      <div className="rounded-md border border-border bg-surface-2 p-4">
+      <div className="rounded-xl border border-border bg-surface-2 p-4">
         <h3 className="text-sm font-semibold">{t("methodology.title")}</h3>
         <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
           {t("methodology.body")}
@@ -80,7 +85,7 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
         {primaryCards.map((card) => (
           <div
             key={card.label}
-            className="rounded-md border border-border bg-surface p-4"
+            className="rounded-xl border border-border bg-surface p-4"
           >
             <dt className="text-sm text-muted-foreground">{card.label}</dt>
             <dd className="mt-1 text-xl font-semibold">{card.value}</dd>
@@ -96,7 +101,7 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
           {secondaryCards.map((card) => (
             <div
               key={card.label}
-              className="rounded-md border border-border bg-surface p-3"
+              className="rounded-xl border border-border bg-surface p-3"
             >
               <dt className="text-xs text-muted-foreground">{card.label}</dt>
               <dd className="mt-1 text-base font-medium">{card.value}</dd>
@@ -105,16 +110,16 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
         </dl>
       </details>
 
-      <p className="rounded-md border border-border bg-surface-2 p-4 text-sm text-muted-foreground leading-relaxed">
+      <p className="rounded-xl border border-border bg-surface-2 p-4 text-sm text-muted-foreground leading-relaxed">
         {t("disclaimerBox")}
       </p>
 
-      <div className="rounded-md border border-accent/40 bg-accent/5 p-6">
+      <div className="rounded-2xl bg-surface-dark p-6 text-on-dark-foreground">
         <h3 className="text-lg font-semibold">{t("ctaTitle")}</h3>
-        <p className="mt-2 text-muted-foreground leading-relaxed">
+        <p className="mt-2 text-on-dark-muted leading-relaxed">
           {t("ctaBody")}
         </p>
-        <p className="mt-4 text-sm font-medium text-accent">
+        <p className="mt-4 text-sm font-medium text-lime">
           {t("ctaConfirm")}
         </p>
       </div>

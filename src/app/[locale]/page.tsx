@@ -23,11 +23,6 @@ export default async function LandingPage({
   const steps = t.raw("howItWorks.steps") as { title: string; body: string }[];
   const whatYouGetItems = t.raw("whatYouGet.items") as string[];
   const faqItems = t.raw("faq.items") as { question: string; answer: string }[];
-  const previewRows = t.raw("heroPreview.rows") as {
-    label: string;
-    value: string;
-  }[];
-  const [massRow, proteinRow, factorsRow] = previewRows;
   const [titleLead, titleRest] = splitHeroTitle(t("hero.title"));
 
   const faqJsonLd = {
@@ -84,11 +79,12 @@ export default async function LandingPage({
           </div>
 
           <HeroRiskPreview
+            previewLabel={t("heroPreview.previewLabel")}
             title={t("heroPreview.title")}
-            staticRows={[massRow, proteinRow]}
-            factorsLabel={factorsRow.label}
+            factorsLabel={t("heroPreview.factorsLabel")}
             factorsUnit={t("heroPreview.factorsUnit")}
             factorsUnitSingular={t("heroPreview.factorsUnitSingular")}
+            includesNote={t("heroPreview.includesNote")}
           />
         </div>
 

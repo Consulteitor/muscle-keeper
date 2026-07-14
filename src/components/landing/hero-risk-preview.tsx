@@ -31,17 +31,19 @@ const CHIP_ACTIVE_CLASSES: Record<RiskLevel, string> = {
 };
 
 export function HeroRiskPreview({
+  previewLabel,
   title,
-  staticRows,
   factorsLabel,
   factorsUnit,
   factorsUnitSingular,
+  includesNote,
 }: {
+  previewLabel: string;
   title: string;
-  staticRows: { label: string; value: string }[];
   factorsLabel: string;
   factorsUnit: string;
   factorsUnitSingular: string;
+  includesNote: string;
 }) {
   const tResult = useTranslations("quiz.result");
   const tGauge = useTranslations("landing.heroPreview.gaugeLabels");
@@ -57,8 +59,13 @@ export function HeroRiskPreview({
         className="absolute inset-0 -rotate-3 rounded-3xl bg-lime/60"
       />
       <div className="relative rounded-3xl border border-border-strong bg-surface-elevated p-6 shadow-lg shadow-black/[0.08]">
-        <div className="flex items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">{title}</p>
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground-2">
+              {previewLabel}
+            </p>
+            <p className="mt-1 text-base font-semibold leading-snug">{title}</p>
+          </div>
           <div
             className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-full transition-[background] duration-300"
             style={{
@@ -71,7 +78,7 @@ export function HeroRiskPreview({
           </div>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-5 flex flex-wrap gap-2">
           {LEVELS.map((l) => (
             <button
               key={l}
@@ -89,24 +96,14 @@ export function HeroRiskPreview({
           ))}
         </div>
 
-        <dl className="mt-6 flex flex-col">
-          {staticRows.map((row) => (
-            <div
-              key={row.label}
-              className="flex items-center justify-between border-t border-border py-4 first:border-t-0 first:pt-0"
-            >
-              <dt className="text-sm text-muted-foreground">{row.label}</dt>
-              <dd className="text-base font-semibold">{row.value}</dd>
-            </div>
-          ))}
-        </dl>
-
-        <div className="mt-4 flex items-center justify-between rounded-xl bg-surface-dark px-4 py-3.5">
-          <dt className="text-sm text-on-dark-muted">{factorsLabel}</dt>
-          <dd className="text-base font-semibold text-lime transition-all duration-200">
+        <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+          <span className="text-sm text-muted-foreground">{factorsLabel}</span>
+          <span className="text-base font-semibold text-accent transition-all duration-200">
             {count} {count === 1 ? factorsUnitSingular : factorsUnit}
-          </dd>
+          </span>
         </div>
+
+        <p className="mt-4 text-xs text-muted-foreground-2">{includesNote}</p>
       </div>
     </div>
   );

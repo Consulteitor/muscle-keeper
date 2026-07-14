@@ -5,7 +5,13 @@ import { Link } from "@/i18n/navigation";
 import type { DiagnosticResult } from "@/lib/diagnostic";
 import { RiskBadge } from "./risk-badge";
 
-export function QuizResult({ result }: { result: DiagnosticResult }) {
+export function QuizResult({
+  result,
+  locale,
+}: {
+  result: DiagnosticResult;
+  locale: string;
+}) {
   const t = useTranslations("quiz.result");
 
   const primaryCards = [
@@ -73,6 +79,37 @@ export function QuizResult({ result }: { result: DiagnosticResult }) {
           </ul>
         </div>
       )}
+
+      {result.topFactors.length > 0 && (
+        <div>
+          <h3 className="text-lg font-semibold">{t("actionsTitle")}</h3>
+          <ul className="mt-3 flex flex-col gap-3">
+            {result.topFactors.map((factor) => (
+              <li
+                key={factor}
+                className="flex items-start gap-3 rounded-xl border border-accent/25 bg-accent/5 p-4 text-sm text-foreground leading-relaxed"
+              >
+                <span aria-hidden="true" className="text-accent">→</span>
+                <span>{t(`actions.${factor}`)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div className="rounded-2xl bg-surface-dark p-6 text-on-dark-foreground">
+        <h3 className="text-lg font-semibold">{t("guide.title")}</h3>
+        <p className="mt-2 text-on-dark-muted leading-relaxed">{t("guide.body")}</p>
+        <a
+          href={`/guides/muscle-keeper-guia-${locale}.pdf`}
+          download
+          className="mt-4 inline-flex items-center gap-2 rounded-md bg-lime px-6 py-3 text-sm font-medium text-lime-foreground transition-colors hover:bg-lime-strong"
+        >
+          {t("guide.cta")}
+          <span aria-hidden="true">↓</span>
+        </a>
+        <p className="mt-3 text-xs text-on-dark-muted">{t("guide.note")}</p>
+      </div>
 
       <div className="rounded-xl border border-border bg-surface-2 p-4">
         <h3 className="text-sm font-semibold">{t("methodology.title")}</h3>

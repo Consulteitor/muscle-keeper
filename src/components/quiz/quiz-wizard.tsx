@@ -157,7 +157,7 @@ export function QuizWizard({ locale }: { locale: string }) {
   if (phase === "result" && result) {
     return (
       <div className="mx-auto w-full max-w-[720px] flex-1 px-6 py-12">
-        <QuizResult result={result} />
+        <QuizResult result={result} locale={locale} />
       </div>
     );
   }

@@ -262,6 +262,23 @@
         "nauseaFatigue": "Les nàusees o la fatiga poden dificultar mantenir l'entrenament i l'alimentació.",
         "ageRisk": "La teva edat fa més important conservar la massa muscular durant la pèrdua de pes."
       },
+      "actionsTitle": "Què pots fer ja",
+      "actions": {
+        "noCurrentTraining": "Comença amb 2 sessions curtes de força a la setmana, encara que sigui només amb el pes del teu propi cos.",
+        "noBaselineTraining": "Introdueix l'entrenament de força a poc a poc: 2 dies aquesta primera setmana ja marquen diferència.",
+        "lowProteinMeals": "Afegeix una font de proteïna (ous, iogurt grec, llegums, pollastre, peix, tofu) en almenys un àpat més al dia.",
+        "fastWeightLoss": "Comenta-li al teu metge la velocitat a la qual estàs perdent pes: una pèrdua més gradual sol protegir millor el múscul.",
+        "longTreatment": "Com més temps portes en tractament, més importa mantenir l'entrenament de força de forma constant, no només puntual.",
+        "lowAppetite": "Prioritza petites quantitats de proteïna a cada àpat, encara que mengis menys quantitat en total.",
+        "nauseaFatigue": "Els dies amb més símptomes, una sessió curta i suau és millor que cap: no esperis a trobar-te perfecte.",
+        "ageRisk": "A partir dels 40, l'entrenament de força regular pesa encara més a l'hora de conservar múscul."
+      },
+      "guide": {
+        "title": "La teva guia d'inici, ara mateix",
+        "body": "Exercicis bàsics de força i pautes de proteïna per començar avui, sense esperar el programa complet.",
+        "cta": "Descarregar guia en PDF",
+        "note": "Contingut general, no personalitzat. No substitueix el consell del teu metge o dietista-nutricionista."
+      },
       "methodology": {
         "title": "Com hem calculat aquesta estimació",
         "body": "Hem combinat la teva evolució de pes, edat, sexe, temps en tractament, activitat de força, disponibilitat per entrenar i consum aproximat de proteïna. El resultat identifica patrons de risc, però no mesura directament la teva composició corporal."
@@ -283,8 +300,8 @@
         "pct": "%"
       },
       "disclaimerBox": "Aquest resultat és una estimació orientativa basada en les teves respostes i en patrons generals. No mesura directament la teva composició corporal ni constitueix un diagnòstic clínic. Comenta'l amb el teu metge o dietista-nutricionista abans de fer canvis importants.",
-      "ctaTitle": "Perdre pes no hauria de significar renunciar al teu múscul",
-      "ctaBody": "Estem construint un programa de força i nutrició adaptat a persones en tractament amb GLP-1: realista quan et trobes bé i també quan tens poca gana, fatiga o nàusees. T'avisarem per email quan estigui disponible.",
+      "ctaTitle": "La guia és només el principi",
+      "ctaBody": "Estem construint un programa complet de força i nutrició adaptat a persones en tractament amb GLP-1: realista quan et trobes bé i també quan tens poca gana, fatiga o nàusees. T'avisarem per email quan estigui disponible.",
       "ctaConfirm": "Resultat enviat — revisa el teu email",
       "restart": "Tornar a començar"
     }

@@ -262,6 +262,23 @@
         "nauseaFatigue": "Nausea or fatigue can make it harder to keep up training and eating well.",
         "ageRisk": "Your age makes preserving muscle during weight loss especially important."
       },
+      "actionsTitle": "What you can do right now",
+      "actions": {
+        "noCurrentTraining": "Start with 2 short strength sessions a week, even using just your own body weight.",
+        "noBaselineTraining": "Introduce strength training gradually: 2 days this first week already makes a difference.",
+        "lowProteinMeals": "Add a protein source (eggs, Greek yoghurt, legumes, chicken, fish, tofu) to at least one more meal a day.",
+        "fastWeightLoss": "Tell your doctor how fast you're losing weight: a more gradual pace usually protects muscle better.",
+        "longTreatment": "The longer you've been on treatment, the more it matters to keep strength training consistent, not just occasional.",
+        "lowAppetite": "Prioritise small amounts of protein at each meal, even if you're eating less overall.",
+        "nauseaFatigue": "On days with more symptoms, a short, gentle session is better than none: don't wait to feel perfect.",
+        "ageRisk": "From your 40s onward, regular strength training matters even more for preserving muscle."
+      },
+      "guide": {
+        "title": "Your starter guide, right now",
+        "body": "Basic strength exercises and protein guidelines to get started today, without waiting for the full programme.",
+        "cta": "Download the PDF guide",
+        "note": "General content, not personalised. It does not replace advice from your doctor or registered dietitian."
+      },
       "methodology": {
         "title": "How we calculated this estimate",
         "body": "We combined your weight change, age, sex, time on treatment, strength activity, training availability and approximate protein intake. The result identifies risk patterns but does not directly measure your body composition."
@@ -283,8 +300,8 @@
         "pct": "%"
       },
       "disclaimerBox": "This result is a general estimate based on your answers and broad population patterns. It does not directly measure your body composition or constitute a clinical diagnosis. Discuss it with your doctor or registered dietitian before making significant changes.",
-      "ctaTitle": "Losing weight should not mean giving up your muscle",
-      "ctaBody": "We're building a strength and nutrition programme for people using GLP-1 treatments: realistic when you feel well and when you are dealing with low appetite, fatigue or nausea. We'll email you when it becomes available.",
+      "ctaTitle": "The guide is just the start",
+      "ctaBody": "We're building a full strength and nutrition programme for people using GLP-1 treatments: realistic when you feel well and when you are dealing with low appetite, fatigue or nausea. We'll email you when it becomes available.",
       "ctaConfirm": "Result sent — check your email",
       "restart": "Start over"
     }

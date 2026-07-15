@@ -262,6 +262,23 @@
         "nauseaFatigue": "Las náuseas o la fatiga pueden dificultar mantener el entrenamiento y la alimentación.",
         "ageRisk": "Tu edad hace más importante conservar la masa muscular durante la pérdida de peso."
       },
+      "actionsTitle": "Qué puedes hacer ya",
+      "actions": {
+        "noCurrentTraining": "Empieza con 2 sesiones cortas de fuerza a la semana, aunque sea solo con el peso de tu propio cuerpo.",
+        "noBaselineTraining": "Introduce el entrenamiento de fuerza poco a poco: 2 días esta primera semana ya marcan diferencia.",
+        "lowProteinMeals": "Añade una fuente de proteína (huevos, yogur griego, legumbres, pollo, pescado, tofu) en al menos una comida más al día.",
+        "fastWeightLoss": "Coméntale a tu médico la velocidad a la que estás perdiendo peso: una pérdida más gradual suele proteger mejor el músculo.",
+        "longTreatment": "Cuanto más tiempo llevas en tratamiento, más importa mantener el entrenamiento de fuerza de forma constante, no solo puntual.",
+        "lowAppetite": "Prioriza pequeñas cantidades de proteína en cada comida, aunque comas menos cantidad en total.",
+        "nauseaFatigue": "En los días con más síntomas, una sesión corta y suave es mejor que ninguna: no esperes a encontrarte perfecto.",
+        "ageRisk": "A partir de los 40, el entrenamiento de fuerza regular pesa aún más a la hora de conservar músculo."
+      },
+      "guide": {
+        "title": "Tu guía de inicio, ahora mismo",
+        "body": "Ejercicios básicos de fuerza y pautas de proteína para empezar hoy, sin esperar al programa completo.",
+        "cta": "Descargar guía en PDF",
+        "note": "Contenido general, no personalizado. No sustituye el consejo de tu médico o dietista-nutricionista."
+      },
       "methodology": {
         "title": "Cómo hemos calculado esta estimación",
         "body": "Hemos combinado tu evolución de peso, edad, sexo, tiempo en tratamiento, actividad de fuerza, disponibilidad para entrenar y consumo aproximado de proteína. El resultado identifica patrones de riesgo, pero no mide directamente tu composición corporal."
@@ -283,8 +300,8 @@
         "pct": "%"
       },
       "disclaimerBox": "Este resultado es una estimación orientativa basada en tus respuestas y en patrones generales. No mide directamente tu composición corporal ni constituye un diagnóstico clínico. Coméntalo con tu médico o dietista-nutricionista antes de hacer cambios importantes.",
-      "ctaTitle": "Perder peso no debería significar renunciar a tu músculo",
-      "ctaBody": "Estamos construyendo un programa de fuerza y nutrición adaptado a personas en tratamiento con GLP-1: realista cuando te encuentras bien y también cuando tienes poco apetito, fatiga o náuseas. Te avisaremos por email cuando esté disponible.",
+      "ctaTitle": "La guía es solo el principio",
+      "ctaBody": "Estamos construyendo un programa completo de fuerza y nutrición adaptado a personas en tratamiento con GLP-1: realista cuando te encuentras bien y también cuando tienes poco apetito, fatiga o náuseas. Te avisaremos por email cuando esté disponible.",
       "ctaConfirm": "Resultado enviado — revisa tu email",
       "restart": "Volver a empezar"
     }

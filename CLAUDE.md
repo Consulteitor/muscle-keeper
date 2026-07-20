@@ -10,3 +10,10 @@ Regles bloquejants d'aquest repo (vegeu `hq` per al detall complet):
 - Dades de salut → RLS a totes les taules, sense excepcions.
 - No servir media des de `raw.githubusercontent.com`.
 - Idiomes: `es` (per defecte), `ca`, `en` — qualsevol string visible ha d'existir a `src/messages/{es,ca,en}.json`.
+
+## Bitàcora central (hq)
+
+L'estat de tots els projectes de l'Oriol viu al repo privat `Consulteitor/hq` (en local: `~/Projects/hq`; si no hi és: `gh repo clone Consulteitor/hq`).
+
+- **En començar a treballar aquí:** fes `git pull` de hq i llegeix `PROJECTS.md` + `projectes/muscle-keeper/projecte.md`.
+- **En acabar un bloc de feina:** afegeix una entrada a `bitacora/AAAA-MM.md` de hq (data, què s'ha fet, pendents, decisions), actualitza `projectes/muscle-keeper/projecte.md` si ha canviat res estructural, i fes commit+push de hq.
